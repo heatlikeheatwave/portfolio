@@ -1,10 +1,25 @@
 @include mq-mobile {
+  body {
+    background: grey;
+  }
+  main {
+    margin: 0 auto;
+    width: 90%;
+  }
+  section {
+    background: $white;
+    padding: 20px 0;
+  }
   .image-wrapper {
+    display: flex;
+    justify-content: center;
     width: 90%;
     .profile {
-      background: $black;
+      background: $white;
       border-radius: 50%;
+      border: 0.5px dotted black;
       width: 100%;
+      max-width: 200px;
     }
   } 
 }

@@ -1,5 +1,6 @@
 @include mq-mobile {
   header {
+    background: $white;
     height: 257px;
     h1 {
       font-family: $abrilFatFaceFontFamily;
@@ -36,7 +37,7 @@
         &:last-of-type {
           margin-right: 0;
         }
-        &.active {
+        &.current {
           border: solid 1px $white;
         }
       }
