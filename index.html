@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Heather Hamilton is a Front-End Web Developer who is passionate about beautiful and accessible web apps and building digital products using JavaScript, React, HTML and CSS">
-    <meta name="keywords" content="Heather Hamilton, Portfolio, Front-End Developer, Front-End Web Developer, Frontend Developer, Frontend Web Developer, Front-End Software Engineer, Software Engineer, Frontend Software Engieer, JavaScript Developer, Toronto Canada">
+    <meta name="Description" content="Heather Hamilton is a Front-End Web Developer who loves to create beautiful and accessible experiences for all users and building digital products with JavaScript, React, HTML and CSS">
+    <meta name="keywords" content="Heather Hamilton, Portfolio, Front-End Developer, Front-End Web Developer, Frontend Developer, Frontend Web Developer, Front-End Software Engineer, Software Engineer, Frontend Software Engieer, JavaScript Developer, Toronto Canada, React, JavaScript Developer, JavaScript, Women in Tech">
     <link rel="stylesheet" href="styles/main.css"/>
     <title>Heather Hamilton | Front-End Developer</title>
   </head>
@@ -13,7 +13,18 @@
     <header>
       <h1>Heather Hamilton</h1>
       <h2>Personal Portfolio</h2>
-      <nav>
+      <div class="mobile-menu">
+        <button>
+          <span class="far fa-caret-square-left"></span>
+        </button>
+        <nav>
+          <a href="/" class="current">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <nav class="menu">
         <a href="/" class="current">Home</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
@@ -29,27 +40,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fugit rerum repudiandae voluptatem voluptate ad est, perspiciatis, possimus tenetur, necessitatibus perferendis ipsam atque?</p>
         <nav class="social-media">
           <!-- linkedin -->
-          <a href="" class="fab fa-linkedin"></a>
+          <a href="" class="fab fa-linkedin-in" aria-label="Heather Hamilton's LinkedIn Page"></a>
           <!-- github -->
-          <a href="" class="fab fa-github-square"></a>
+          <a href="" class="fab fa-github" aria-label="Heather Hamilton's GitHub Page"></a>
           <!-- twitter -->
-          <a href="" class="fab fa-twitter-square"></a>
-          <!-- instagram -->
-          <a href="" class="fab fa-instagram"></a>
+          <a href="" class="fab fa-twitter twitter" aria-label="Heather Hamilton's Twitter Account"></a>
         </nav>
         <div>
-          <!-- maybe put instagram stuff here? -->
-          <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-          </ul>
       </div>
-
-
       </section>
       <section>
 
@@ -61,21 +59,19 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Aperiam est consectetur ipsa voluptatem minima aut dolore totam officia, et vero natus nam odit! Pariatur, incidunt. Quo, est laudantium?</p>
         </div>
         <div>
-          <div>
-            <h3>Recent Tweets</h3>
-            <!-- tweet block one -->
-            <!-- tweet block two -->
-        </div>
+          
         <div>
           <h3>Posts</h3>
           <div>
             <img src="" alt="">
+            <!-- https://medium.com/@hghamilton/self-care-in-an-age-of-endless-responsibilities-99f777d38cb1 -->
             <h4></h4>
             <p></p>
             <p></p>
           </div>
           <div>
             <img src="" alt="">
+            <!-- https://medium.com/@hghamilton/how-to-use-css-to-make-a-patterned-background-255e0b3c4527 -->
             <h4></h4>
             <p></p>
             <p></p>
@@ -88,14 +84,16 @@
       <p>Copyright 2019 Heather Hamilton</p>
       <nav class="social-media">
         <!-- linkedin -->
-        <a href="" class="fab fa-linkedin"></a>
+        <a href="" class="fab fa-linkedin" aria-label="Heather Hamilton's LinkedIn Page"></a>
         <!-- github -->
-        <a href="" class="fab fa-github-square"></a>
+        <a href="" class="fab fa-github-square" aria-label="Heather Hamilton's GitHub Page"></a>
         <!-- twitter -->
-        <a href="" class="fab twitter">twitter</a>
-        <!-- instagram -->
-        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-twitter" aria-label="Heather Hamilton's Twitter Account"></a>
       </nav>
+      <div>
+        <h3>Recent Tweets</h3>
+        <a class="twitter-timeline" data-lang="en" data-height="800" data-theme="dark" href="https://twitter.com/heatherdevsweb?ref_src=twsrc%5Etfw">Tweets by heatherdevsweb</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+    </div>
     </footer>
   </body>
 </html> 

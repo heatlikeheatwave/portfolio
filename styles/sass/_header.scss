@@ -1,51 +1,80 @@
 @include mq-mobile {
   header {
     background: $white;
-    height: 257px;
     h1 {
       font-family: $abrilFatFaceFontFamily;
-      font-size: 3rem;
       text-transform: uppercase;
     }
 
     h2 {
       font-family: $robotoFontFamily;
-      font-size: 1rem;
       font-weight: $lightFontWeight;
     }
 
     h1, h2 {
-      text-align: center;
       padding-bottom: 20px;
+      text-align: center;
     }
 
-    nav {
-      background: $black;
-      text-align: center;
-      height: 10vh;
-      padding-top: 25px;
-      a {
-        color: $white;
-        border-radius: 3px;
-        padding: 10px;
-        text-decoration: none;
-        margin-right: 10px;
-        &:hover, &:active {
+    .mobile-menu {
+      max-width: 480px;
+      overflow: hidden;
+        button {
           background: $white;
-          color: $black;
-        }
-        &:last-of-type {
-          margin-right: 0;
-        }
-        &.current {
-          border: solid 1px $white;
+          border: none;
+          box-shadow: none;
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          .far {
+          &:hover {
+            color: $iconHover;
+          }
         }
       }
+      nav {
+        background: $black;
+        display: none;
+        height: 10vh;
+        padding-top: 25px;
+        text-align: center;
+        a {
+          color: $white;
+          border-radius: 3px;
+          font-weight: $semiBoldFontWeight;
+          margin-right: 5px;
+          padding: 10px;
+          text-decoration: none;
+          &:hover, &:active {
+            background: $white;
+            color: $black;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+          &.current {
+            border: solid 1px $white;
+          }
+        }
+      }
+    }
+
+    .menu {
+      display: none;
     }
   }
 }
 
 @include mq-tablet {
+  .mobile-menu {
+    display: none;
+  }
+  .menu {
+    display: block;
+    a {
+      margin-right: 10px;
+    }
+  }
 
 }
 
