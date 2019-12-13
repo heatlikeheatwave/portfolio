@@ -1,7 +1,7 @@
 @import 'mixins';
 @import 'font_awesome';
-// @import 'scss/solid';
-@import 'scss/brands.scss';
+@import 'scss/brands';
+@import 'scss/regular';
 @import 'fonts';
 @import 'normalize';
 @import 'base';
@@ -9,3 +9,4 @@
 @import 'header';
 @import 'footer';
 @import 'homepage';
+@import 'mobile_nav';

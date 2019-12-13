@@ -6,10 +6,11 @@
 .fa,
 .fas,
 .far,
+.regular,
 .fal,
 .fad,
 .fab,
-.twitter {
+.brand {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -19,7 +20,7 @@
   line-height: 1;
 }
 
-.twitter {
+.brand, .regular {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -27,222 +28,6 @@
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-}
-
-.fa-lg {
-  font-size: 1.33333em;
-  line-height: 0.75em;
-  vertical-align: -.0667em;
-}
-
-.fa-xs {
-  font-size: .75em;
-}
-
-.fa-sm {
-  font-size: .875em;
-}
-
-.fa-1x {
-  font-size: 1em;
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-.fa-3x {
-  font-size: 3em;
-}
-
-.fa-4x {
-  font-size: 4em;
-}
-
-.fa-5x {
-  font-size: 5em;
-}
-
-.fa-6x {
-  font-size: 6em;
-}
-
-.fa-7x {
-  font-size: 7em;
-}
-
-.fa-8x {
-  font-size: 8em;
-}
-
-.fa-9x {
-  font-size: 9em;
-}
-
-.fa-10x {
-  font-size: 10em;
-}
-
-.fa-fw {
-  text-align: center;
-  width: 1.25em;
-}
-
-.fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-
-.fa-ul > li {
-  position: relative;
-}
-
-.fa-li {
-  left: -2em;
-  position: absolute;
-  text-align: center;
-  width: 2em;
-  line-height: inherit;
-}
-
-.fa-border {
-  border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em;
-}
-
-.fa-pull-left {
-  float: left;
-}
-
-.fa-pull-right {
-  float: right;
-}
-
-.fa.fa-pull-left,
-.fas.fa-pull-left,
-.far.fa-pull-left,
-.fal.fa-pull-left,
-.fab.fa-pull-left,
-.fa-pull-left.twitter {
-  margin-right: .3em;
-}
-
-.fa.fa-pull-right,
-.fas.fa-pull-right,
-.far.fa-pull-right,
-.fal.fa-pull-right,
-.fab.fa-pull-right,
-.fa-pull-right.twitter {
-  margin-left: .3em;
-}
-
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
-}
-
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-}
-
-.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
-}
-
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
-}
-
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical,
-:root .fa-flip-both {
-  -webkit-filter: none;
-          filter: none;
-}
-
-.fa-stack {
-  display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  position: relative;
-  vertical-align: middle;
-  width: 2.5em;
-}
-
-.fa-stack-1x,
-.fa-stack-2x {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.fa-stack-1x {
-  line-height: inherit;
-}
-
-.fa-stack-2x {
-  font-size: 2em;
-}
-
-.fa-inverse {
-  color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
@@ -5894,12 +5679,28 @@ readers do not read off random characters that represent icons */
 
 
 .fab,
-.twitter {
+.brand {
   font-family: 'Font Awesome 5 Brands';
 }
 
-.twitter::before {
-  content: "\f099";
+/*!
+ * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("./sass/webfonts/fa-regular-400.eot");
+  src: url("./sass/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./sass/webfonts/fa-regular-400.woff2") format("woff2"), url("./sass/webfonts/fa-regular-400.woff") format("woff"), url("./sass/webfonts/fa-regular-400.ttf") format("truetype"), url("./sass/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+
+.far,
+.regular {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
 }
 
 /*!
@@ -5917,8 +5718,28 @@ readers do not read off random characters that represent icons */
 
 
 .fab,
-.twitter {
+.brand {
   font-family: 'Font Awesome 5 Brands';
+}
+
+/*!
+ * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("./sass/webfonts/fa-regular-400.eot");
+  src: url("./sass/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./sass/webfonts/fa-regular-400.woff2") format("woff2"), url("./sass/webfonts/fa-regular-400.woff") format("woff"), url("./sass/webfonts/fa-regular-400.ttf") format("truetype"), url("./sass/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+
+.far,
+.regular {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -6126,15 +5947,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 0 auto;
     padding: 0 20px;
   }
+  
   .far,
+  .regular,
   .fab,
-  .twitter {
+  .brand {
     font-size: 3rem;
+  }
+  .active {
+    display: block;
   }
 }
 
 @media (min-width: 320px) {
   header {
+    background: #fcfcff;
     background: #fcfcff;
   }
   header h1 {
@@ -6149,54 +5976,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     padding-bottom: 20px;
     text-align: center;
   }
-  header .mobile-menu {
-    max-width: 480px;
-    overflow: hidden;
-  }
-  header .mobile-menu button {
-    background: #fcfcff;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-  header .mobile-menu button .far:hover {
-    color: #bfbfbf;
-  }
-  header .mobile-menu nav {
-    background: #3D3D3D;
-    display: none;
-    height: 10vh;
-    padding-top: 25px;
-    text-align: center;
-  }
-  header .mobile-menu nav a {
-    color: #fcfcff;
-    border-radius: 3px;
-    font-weight: 500;
-    margin-right: 5px;
-    padding: 10px;
-    text-decoration: none;
-  }
-  header .mobile-menu nav a:hover, header .mobile-menu nav a:active {
-    background: #fcfcff;
-    color: #3D3D3D;
-  }
-  header .mobile-menu nav a:last-of-type {
-    margin-right: 0;
-  }
-  header .mobile-menu nav a.current {
-    border: solid 1px #fcfcff;
-  }
   header .menu {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  .mobile-menu {
+  .mobile-menu-wrapper {
     display: none;
   }
   .menu {
@@ -6240,15 +6026,112 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         grid-template-columns: repeat(3, 1fr);
     justify-items: safe center;
   }
-  .social-media a.fab, .social-media a.twitter {
+  .social-media a.fab, .social-media a.brand {
     color: #3D3D3D;
     text-decoration: none;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .social-media a.fab:hover, .social-media a.twitter:hover {
+  .social-media a.fab:hover, .social-media a.brand:hover {
     color: #bfbfbf;
     -webkit-transform: scale(1.25);
             transform: scale(1.25);
+  }
+}
+
+@media (min-width: 320px) {
+  .mobile-nav {
+    background: #fcfcff;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    background: #3D3D3D;
+    color: #fcfcff;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100vh;
+    right: -20rem;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 200px;
+    z-index: 1;
+  }
+  .mobile-nav.expanded {
+    right: 0;
+  }
+  .mobile-nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-nav ul a {
+    color: #fcfcff;
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .mobile-nav ul a:hover {
+    font-weight: 500;
+    color: #bfbfbf;
+  }
+  .menu-button {
+    background: #fcfcff;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+    cursor: pointer;
+    height: 30px;
+    position: fixed;
+    width: 30px;
+    z-index: 2;
+  }
+  .menu-button .fa-caret-square-right, .menu-button .fa-caret-square-right::before {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #fcfcff;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
+  }
+  .menu-button .fa-caret-square-right {
+    margin-top: 0;
+  }
+  .menu-button .fa-caret-square-right::after {
+    margin-top: 0.8rem;
+  }
+  .menu-button .fa-caret-square-right::before {
+    margin-top: -0.8rem;
+  }
+  .menu-button.expanded .fa-caret-square-right {
+    background: transparent;
+  }
+  .menu-button.expanded .fa-caret-square-right::after, .menu-button.expanded .fa-caret-square-right::before {
+    background: white;
+    margin-top: 0;
+  }
+  .menu-button.expanded .fa-caret-square-right::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .menu-button.expanded .fa-caret-square-right::before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }

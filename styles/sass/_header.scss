@@ -16,48 +16,49 @@
       text-align: center;
     }
 
-    .mobile-menu {
-      max-width: 480px;
-      overflow: hidden;
-        button {
-          background: $white;
-          border: none;
-          box-shadow: none;
-          position: absolute;
-          top: 10px;
-          right: 20px;
-          .far {
-          &:hover {
-            color: $iconHover;
-          }
-        }
-      }
-      nav {
-        background: $black;
-        display: none;
-        height: 10vh;
-        padding-top: 25px;
-        text-align: center;
-        a {
-          color: $white;
-          border-radius: 3px;
-          font-weight: $semiBoldFontWeight;
-          margin-right: 5px;
-          padding: 10px;
-          text-decoration: none;
-          &:hover, &:active {
-            background: $white;
-            color: $black;
-          }
-          &:last-of-type {
-            margin-right: 0;
-          }
-          &.current {
-            border: solid 1px $white;
-          }
-        }
-      }
-    }
+    // .mobile-menu-wrapper {
+    //   max-width: 480px;
+    //   overflow: hidden;
+    //   .menu-button {
+      background: $white;
+      //     border: none;
+      //     box-shadow: none;
+      //     position: absolute;
+      //     top: 10px;
+      //     right: 20px;
+    //     .far {
+    //       &:hover, &:active {
+    //         transform: rotate(-90deg);
+    //         color: $iconHover;
+    //       }
+    //     }
+    //   }
+    //   nav {
+    //     background: $black;
+    //     display: none;
+    //     height: 10vh;
+    //     padding-top: 25px;
+    //     text-align: center;
+    //     a {
+    //       color: $white;
+    //       border-radius: 3px;
+    //       font-weight: $semiBoldFontWeight;
+    //       margin-right: 5px;
+    //       padding: 10px;
+    //       text-decoration: none;
+    //       &:hover, &:active {
+    //         background: $white;
+    //         color: $black;
+    //       }
+    //       &:last-of-type {
+    //         margin-right: 0;
+    //       }
+    //       &.current {
+    //         border: solid 1px $white;
+    //       }
+    //     }
+    //   }
+    // }
 
     .menu {
       display: none;
@@ -66,7 +67,7 @@
 }
 
 @include mq-tablet {
-  .mobile-menu {
+  .mobile-menu-wrapper {
     display: none;
   }
   .menu {

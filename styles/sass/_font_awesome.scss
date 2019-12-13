@@ -1,14 +1,24 @@
 @import "fontawesome.scss";
 @import "./scss/brands.scss";
+@import "./scss/regular.scss";
 
 // FontAwesome places outside of media query because @extend cannot be used within the same directive
-.twitter {
+.brand {
   @extend %fa-icon;
   @extend .fab;
 
-  &::before {
-    content: fa-content($fa-var-twitter);
-  }
+  // &::before {
+  //   content: fa-content($fa-var-twitter);
+  // }
+}
+
+.regular {
+  @extend %fa-icon;
+  @extend .far 
+
+  // &::before {
+  //   content: fa-content($fa-var-caret-left);
+  // }
 }
 
 // FontAwesome places outside of media query because @extend cannot be used within the same directive
