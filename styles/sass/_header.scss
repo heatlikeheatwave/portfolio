@@ -1,0 +1,58 @@
+@include mq-mobile {
+  header {
+    height: 257px;
+    h1 {
+      font-family: $abrilFatFaceFontFamily;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: $robotoFontFamily;
+      font-size: 1rem;
+      font-weight: $lightFontWeight;
+    }
+
+    h1, h2 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    nav {
+      background: $black;
+      text-align: center;
+      height: 10vh;
+      padding-top: 25px;
+      a {
+        color: $white;
+        border-radius: 3px;
+        padding: 10px;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover, &:active {
+          background: $white;
+          color: $black;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+        &.active {
+          border: solid 1px $white;
+        }
+
+      }
+    }
+  }
+}
+
+@include mq-tablet {
+
+}
+
+@include mq-desktop {
+
+}
+
+@include mq-retina {
+
+}

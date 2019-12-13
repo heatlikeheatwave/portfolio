@@ -1,0 +1,32 @@
+// @import "sass/scss/fontawesome.scss";
+// @import "sass/scss/solid.scss";
+// @import "sass/scss/brands.scss";
+
+@include mq-mobile {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .twitter {
+    @extend %fa-icon;
+    @extend .fab;
+    // position: relative;
+    font-family: $fontAwesomeFontFamily;
+    &:before {
+      content: fa-content($fa-var-twitter);
+    }
+  }
+}
+
+@include mq-tablet {
+
+}
+
+@include mq-desktop {
+
+}
+
+@include mq-retina {
+
+}

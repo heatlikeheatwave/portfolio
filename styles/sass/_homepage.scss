@@ -1,0 +1,22 @@
+@include mq-mobile {
+  .image-wrapper {
+    width: 90%;
+    .profile {
+      background: $black;
+      border-radius: 50%;
+      width: 100%;
+    }
+  } 
+}
+
+@include mq-tablet {
+
+}
+
+@include mq-desktop {
+
+}
+
+@include mq-retina {
+
+}
