@@ -24,9 +24,6 @@
 }
 
 @include mq-tablet {
-  .mobile-menu-wrapper {
-    display: none;
-  }
   .menu {
     display: block;
     a {

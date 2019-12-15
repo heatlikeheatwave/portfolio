@@ -55,27 +55,6 @@ $buttonSize: 60px;
       }
     }
   }
-
-  @keyframes fadeIn {
-    0% {
-      filter: opacity(0);
-    }
-    25% {
-      filter: opacity(0.25);
-      
-    }
-    50% {
-      filter: opacity(0.5);
-      
-    }
-    75% {
-      filter: opacity(0.75);
-      
-    }
-    100% {
-      filter: opacity(1);
-    }
-  }
   
   .menu-button {
     -webkit-user-select: none;
@@ -103,6 +82,28 @@ $buttonSize: 60px;
           font-family: $robotoFontFamily;
         }
       }
+    }
+  }
+
+
+  @keyframes fadeIn {
+    0% {
+      filter: opacity(0);
+    }
+    25% {
+      filter: opacity(0.25);
+      
+    }
+    50% {
+      filter: opacity(0.5);
+      
+    }
+    75% {
+      filter: opacity(0.75);
+      
+    }
+    100% {
+      filter: opacity(1);
     }
   }
 }
