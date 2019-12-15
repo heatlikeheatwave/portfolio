@@ -1,24 +1,26 @@
 const app = {};
 
-app.menuButtonEventHandler = () => {
-  const hamburger = {
-    menuButton: document.querySelector('.menu-button'),
-    nav: document.querySelector('nav'),
+app.menuButton = document.querySelector('.menu-button');
 
-    doToggle: function(e) {
-      e.preventDefault();
-      this.menuButton.classList.toggle('expanded');
-      this.nav.classList.toggle('expanded');
-    }
-  };
+app.nav = document.querySelector('nav');
 
-  hamburger.menuButton.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+app.toggleAriaLabel = () => {
+  if (document.querySelector('.expanded')) {
+    app.menuButton.setAttribute('aria-label', 'Close the menu');
+  } else {
+    app.menuButton.setAttribute('aria-label', 'Open the menu');
+  }
 }
 
+app.menuButtonEventHandler = e => {
+    e.preventDefault();
+    app.menuButton.classList.toggle('expanded');
+    app.nav.classList.toggle('expanded');
+    app.toggleAriaLabel();
+};
 
 app.init = () => {
-  app.menuButtonEventHandler();
+  app.menuButton.addEventListener('click', app.menuButtonEventHandler);
 }
 
 if (document.readyState === "complete") {
