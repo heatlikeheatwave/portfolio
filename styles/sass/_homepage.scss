@@ -33,14 +33,6 @@
       }
     }
   }
-  // .twitter {
-  //   @extend %fa-icon;
-  //   @extend .fab;
-  
-  //   &:before {
-  //     content: fa-content($fa-var-twitter);
-  //   }
-  // }
 }
 
 @include mq-tablet {
