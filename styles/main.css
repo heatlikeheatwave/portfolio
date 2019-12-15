@@ -2,15 +2,13 @@
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow:500|Roboto:300,400,500display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow:500|Barlow+Semi+Condensed|Roboto:300,400,500display=swap");
 .fa,
 .fas,
 .far,
-.regular,
 .fal,
 .fad,
-.fab,
-.brand {
+.fab {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -20,7 +18,7 @@
   line-height: 1;
 }
 
-.brand, .regular {
+.fab, .far, .fas {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -5678,8 +5676,7 @@ readers do not read off random characters that represent icons */
 }
 
 
-.fab,
-.brand {
+.fab {
   font-family: 'Font Awesome 5 Brands';
 }
 
@@ -5697,10 +5694,28 @@ readers do not read off random characters that represent icons */
 }
 
 
-.far,
-.regular {
+.far {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
+}
+
+/*!
+ * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("./sass/webfonts/fa-solid-900.eot");
+  src: url("./sass/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./sass/webfonts/fa-solid-900.woff2") format("woff2"), url("./sass/webfonts/fa-solid-900.woff") format("woff"), url("./sass/webfonts/fa-solid-900.ttf") format("truetype"), url("./sass/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
 
 /*!
@@ -5717,8 +5732,7 @@ readers do not read off random characters that represent icons */
 }
 
 
-.fab,
-.brand {
+.fab {
   font-family: 'Font Awesome 5 Brands';
 }
 
@@ -5736,8 +5750,7 @@ readers do not read off random characters that represent icons */
 }
 
 
-.far,
-.regular {
+.far {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
@@ -5948,10 +5961,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0 20px;
   }
   
-  .far,
-  .regular,
-  .fab,
-  .brand {
+  .fas,
+  .fab {
     font-size: 3rem;
   }
   .active {
@@ -5960,9 +5971,145 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media (min-width: 320px) {
+  .mobile-menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile-nav {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: bottom 500ms ease-in-out;
+    transition: bottom 500ms ease-in-out;
+    background: #202020;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100%;
+    bottom: -100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .mobile-nav.expanded {
+    bottom: 0;
+  }
+  .mobile-nav.expanded a {
+    -webkit-animation: 1200ms fadeIn;
+            animation: 1200ms fadeIn;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .mobile-nav ul {
+    bottom: 15%;
+    left: 40%;
+    position: absolute;
+    list-style: none;
+  }
+  .mobile-nav ul li {
+    margin: 30px 0;
+  }
+  .mobile-nav ul li:last-of-type {
+    margin: 0;
+  }
+  .mobile-nav ul li a {
+    color: #FFFFFF;
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 2rem;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  .mobile-nav ul li a:hover, .mobile-nav ul li a:active {
+    border: dotted 1px #FFFFFF;
+    background: #FFFFFF;
+    color: #202020;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      -webkit-filter: opacity(0);
+              filter: opacity(0);
+    }
+    25% {
+      -webkit-filter: opacity(0.25);
+              filter: opacity(0.25);
+    }
+    50% {
+      -webkit-filter: opacity(0.5);
+              filter: opacity(0.5);
+    }
+    75% {
+      -webkit-filter: opacity(0.75);
+              filter: opacity(0.75);
+    }
+    100% {
+      -webkit-filter: opacity(1);
+              filter: opacity(1);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      -webkit-filter: opacity(0);
+              filter: opacity(0);
+    }
+    25% {
+      -webkit-filter: opacity(0.25);
+              filter: opacity(0.25);
+    }
+    50% {
+      -webkit-filter: opacity(0.5);
+              filter: opacity(0.5);
+    }
+    75% {
+      -webkit-filter: opacity(0.75);
+              filter: opacity(0.75);
+    }
+    100% {
+      -webkit-filter: opacity(1);
+              filter: opacity(1);
+    }
+  }
+  .menu-button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    background: #202020;
+    border: none;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    bottom: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -ms-user-select: none;
+        user-select: none;
+    cursor: 'pointer';
+    height: 60px;
+    position: fixed;
+    width: 120px;
+    z-index: 2;
+  }
+  .menu-button .fa-bars {
+    color: #f7f7f6;
+    background: transparent;
+  }
+  .menu-button.expanded .fa-bars::before {
+    content: 'X';
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) {
   header {
-    background: #fcfcff;
-    background: #fcfcff;
+    background: #f7f7f6;
   }
   header h1 {
     font-family: "Abril Fatface", cursive;
@@ -5995,14 +6142,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media (min-width: 320px) {
   footer {
-    background: #000000;
-    color: #fcfcff;
+    background: #111111;
+    color: #f7f7f6;
   }
 }
 
 @media (min-width: 320px) {
   section {
-    background: #fcfcff;
+    background: #f7f7f6;
   }
   p {
     margin: 20px 0;
@@ -6013,11 +6160,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     justify-items: safe center;
   }
   .image-wrapper .profile {
-    background: #fcfcff;
+    background: #f7f7f6;
     border-radius: 50%;
-    border: 0.5px dotted #3D3D3D;
+    border: 0.5px dotted #111111;
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
   }
   .social-media {
     display: -ms-grid;
@@ -6026,112 +6173,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         grid-template-columns: repeat(3, 1fr);
     justify-items: safe center;
   }
-  .social-media a.fab, .social-media a.brand {
-    color: #3D3D3D;
+  .social-media a.fab {
+    color: #111111;
     text-decoration: none;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .social-media a.fab:hover, .social-media a.brand:hover {
+  .social-media a.fab:hover {
     color: #bfbfbf;
     -webkit-transform: scale(1.25);
             transform: scale(1.25);
-  }
-}
-
-@media (min-width: 320px) {
-  .mobile-nav {
-    background: #fcfcff;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transition: right 0.5s ease;
-    transition: right 0.5s ease;
-    background: #3D3D3D;
-    color: #fcfcff;
-    cursor: pointer;
-    font-size: 2rem;
-    height: 100vh;
-    right: -20rem;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 200px;
-    z-index: 1;
-  }
-  .mobile-nav.expanded {
-    right: 0;
-  }
-  .mobile-nav ul {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .mobile-nav ul a {
-    color: #fcfcff;
-    font-family: "Barlow", sans-serif;
-    font-size: 2rem;
-    text-decoration: none;
-  }
-  .mobile-nav ul a:hover {
-    font-weight: 500;
-    color: #bfbfbf;
-  }
-  .menu-button {
-    background: #fcfcff;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-        user-select: none;
-    cursor: pointer;
-    height: 30px;
-    position: fixed;
-    width: 30px;
-    z-index: 2;
-  }
-  .menu-button .fa-caret-square-right, .menu-button .fa-caret-square-right::before {
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    background: #fcfcff;
-    content: '';
-    height: 0.4rem;
-    width: 100%;
-  }
-  .menu-button .fa-caret-square-right {
-    margin-top: 0;
-  }
-  .menu-button .fa-caret-square-right::after {
-    margin-top: 0.8rem;
-  }
-  .menu-button .fa-caret-square-right::before {
-    margin-top: -0.8rem;
-  }
-  .menu-button.expanded .fa-caret-square-right {
-    background: transparent;
-  }
-  .menu-button.expanded .fa-caret-square-right::after, .menu-button.expanded .fa-caret-square-right::before {
-    background: white;
-    margin-top: 0;
-  }
-  .menu-button.expanded .fa-caret-square-right::after {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .menu-button.expanded .fa-caret-square-right::before {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
   }
 }
