@@ -47,8 +47,9 @@ $buttonSize: 60px;
           padding: 5px 10px;
           text-decoration: none;
           &:hover, &:active {
-            border: dotted 1px $whitestWhite;
             background: $whitestWhite;
+            border: dotted 1px $whitestWhite;
+            border-radius: 3px;
             color: $darkestGrey;
           }
         }

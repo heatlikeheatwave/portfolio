@@ -13,11 +13,42 @@
     <header>
       <h1>Heather Hamilton</h1>
       <h2>Personal Portfolio</h2>
-      <nav>
-        <a href="/"></a>
-        <a href="projects.html" class="current"></a>
-        <a href="about.html"></a>
-        <a href="contact.html"></a>
+      <div class="mobile-menu-wrapper">
+        <button class="menu-button" aria-label="Open menu">
+          <span class="fas fa-bars regular"></span>
+        </button>
+        <nav class="mobile-nav">
+          <ul>
+            <li>
+            	<a href="/" aria-label="Homepage">Home</a>
+            </li>
+            <li>
+            	<a href="projects.html" class="current" aria-label="Projects by Heather Hamilton">Projects</a>
+            </li>
+            <li>
+              <a href="about.html" aria-label="About Heather Hamilton">About</a>
+            </li>
+            <li>
+              <a href="contact.html" aria-label="Contact Heather Hamilton">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="/" aria-label="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="projects.html" class="current" aria-label="Projects by Heather Hamilton">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" aria-label="About Heather Hamilton">About</a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact Heather Hamilton">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -72,5 +103,6 @@
         <a href="" class="fab fa-instagram"></a>
       </nav>
     </footer>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html> 

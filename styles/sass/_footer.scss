@@ -2,10 +2,27 @@
   footer {
     background: $black;
     color: $white;
+    text-align: center;
+    height: 120px;
+    padding: 20px 0 0;
+    .social-media, .twitter {
+      display: none;
+    }
   }
+  
 }
 
 @include mq-tablet {
+  footer {
+    height: min-content;
+    .social-media, .twitter {
+      display: block;
+    }
+    .twitter {
+      height: 100px;
+      width: calc(100% / 3 - 40px);
+    }
+  }
 
 }
 

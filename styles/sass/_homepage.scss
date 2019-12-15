@@ -3,39 +3,71 @@
 
 @include mq-mobile {
   section {
-    background: $white;
+    background: $whitestWhite;
   }
-  p {
-    margin: 20px 0;
-  }
-  .image-wrapper {
-    display: grid;
-    justify-items: safe center;
-    .profile {
-      background: $white;
-      border-radius: 50%;
-      border: 0.5px dotted $black;
-      width: 100%;
-      max-width: 150px;
+
+  .bio {
+    padding: 40px 0;
+    .image-wrapper {
+      display: grid;
+      justify-items: safe center;
+      padding: 30px 0;
+      .profile {
+        background: $whitestWhite;
+        border-radius: 50%;
+        border: 2px solid $black;
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+    p {
+      margin: 20px auto;
+      max-width: 350px;
+      width: 75%;
+    }
+    .social-media {
+      display: flex;
+      justify-content: space-between;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 75%;
+      a.fab {
+        color: $black;
+        text-decoration: none;
+        transition: 300ms;
+        &:hover {
+          color: $iconHover;
+          transform: scale(1.25);
+        }
+      }
     }
   }
-  .social-media {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: safe center;
-    a.fab {
-      color: $black;
-      text-decoration: none;
-      transition: 300ms;
-      &:hover {
-        color: $iconHover;
-        transform: scale(1.25);
-      }
+
+  .skills {
+    margin-top: 5px;
+    text-align: center;
+    h3 {
+      font-family: $barlowFontFamily;
+      padding: 30px 0;
+    }
+    .svg-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 75px);
+      grid-column-gap: 75px;
+      justify-content: center;
     }
   }
 }
 
 @include mq-tablet {
+  .skills {
+    .svg-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-column-gap: 50px;
+    }
+  }
 
 }
 

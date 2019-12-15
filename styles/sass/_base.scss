@@ -8,8 +8,12 @@
     font-size: $baseFontSize;
   }
 
+  body {
+    background: $white;
+  }
+
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -24,22 +28,34 @@
     font-size: 2rem;
   }
 
+  p {
+    line-height: 2.8rem;
+  }
+
   main {
-    margin: 0 auto;
     padding: 0 20px;
+  }
+
+  section {
+    margin: 0 auto;
+  }
+
+  svg {
+    height: 80px;
+    margin: 15px 0;
   }
 
   .fas, .fab {
     font-size: 3rem;
   }
-
-  .active {
-    display: block;
-  }
   
 }
 
 @include mq-tablet {
+  svg {
+    height: 100px;
+    margin: 25px;
+  }
 
 }
 

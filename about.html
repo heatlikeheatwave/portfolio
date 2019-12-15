@@ -13,16 +13,50 @@
     <header>
       <h1>Heather Hamilton</h1>
       <h2>Personal Portfolio</h2>
-      <nav>
-        <a href="/"></a>
-        <a href="projects.html"></a>
-        <a href="about.html" class="current"></a>
-        <a href="contact.html"></a>
+      <div class="mobile-menu-wrapper">
+        <button class="menu-button" aria-label="Open menu">
+          <span class="fas fa-bars regular"></span>
+        </button>
+        <nav class="mobile-nav">
+          <ul>
+            <li>
+              <a href="/" aria-label="Homepage">Home</a>
+            </li>
+            <li>
+              <a href="projects.html" aria-label="Projects by Heather Hamilton">Projects</a>
+            </li>
+            <li>
+              <a href="about.html" class="current" aria-label="About Heather Hamilton">About</a>
+            </li>
+            <li>
+              <a href="contact.html" aria-label="Contact Heather Hamilton">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="/" aria-label="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects by Heather Hamilton">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" class="current" aria-label="About Heather Hamilton">About</a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact Heather Hamilton">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <section>
-        <h3>About Me</h3>
+        <h3>About Heather Hamilton</h3>
+        <p>Heather is a settler from the traditional territory of the Sḵwx̱wú7mesh (Squamish), Stó:lō and səlilwətaɬ (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations (otherwise known as Vancouver)</p>
+        <p>She currently resides on Treaty 13 Lands, more commonly known as Toronto, where she has recently completed studies at Juno College of Technology (formerly HackerYou).</p>
+        <p>Prior to becoming a Web Developer, she completed her Bachelor of Arts in Human Geography at Simon Fraser University, and has experience working in non-profits, law and FinTech. She loves to create beautiful, intuitive, and accessible experiences for all users, and build digital products using modern web technologies. Her favourite part of web development is the creativity and knowledge required to build digital products, as well as collaboratively problem-solve with her teammates.</p>
         <!-- Summary of experience and credentials. Typically found in the “About” section. -->
       </section>
       <section>
@@ -43,5 +77,6 @@
     <footer>
       <!-- footer to copy and paste -->
     </footer>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html> 

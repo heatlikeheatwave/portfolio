@@ -5944,8 +5944,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   html {
     font-size: 62.5%;
   }
+  body {
+    background: #f7f7f6;
+  }
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   h2 {
     font-size: 2.5rem;
@@ -5956,17 +5959,30 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   p, a {
     font-size: 2rem;
   }
+  p {
+    line-height: 2.8rem;
+  }
   main {
-    margin: 0 auto;
     padding: 0 20px;
+  }
+  section {
+    margin: 0 auto;
+  }
+  svg {
+    height: 80px;
+    margin: 15px 0;
   }
   
   .fas,
   .fab {
     font-size: 3rem;
   }
-  .active {
-    display: block;
+}
+
+@media (min-width: 768px) {
+  svg {
+    height: 100px;
+    margin: 25px;
   }
 }
 
@@ -6025,8 +6041,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     text-decoration: none;
   }
   .mobile-nav ul li a:hover, .mobile-nav ul li a:active {
-    border: dotted 1px #FFFFFF;
     background: #FFFFFF;
+    border: dotted 1px #FFFFFF;
+    border-radius: 3px;
     color: #202020;
   }
   .menu-button {
@@ -6110,6 +6127,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 @media (min-width: 320px) {
   header {
     background: #f7f7f6;
+    padding: 30px 0 0;
   }
   header h1 {
     font-family: "Abril Fatface", cursive;
@@ -6118,13 +6136,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   header h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    padding-bottom: 20px;
   }
   header h1, header h2 {
-    padding-bottom: 20px;
     text-align: center;
   }
   header .menu {
     display: none;
+  }
+  header .current {
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
   }
 }
 
@@ -6141,44 +6163,104 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   footer {
     background: #111111;
     color: #f7f7f6;
+    text-align: center;
+    height: 120px;
+    padding: 20px 0 0;
+  }
+  footer .social-media, footer .twitter {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  footer .social-media, footer .twitter {
+    display: block;
+  }
+  footer .twitter {
+    height: 100px;
+    width: calc(100% / 3 - 40px);
   }
 }
 
 @media (min-width: 320px) {
   section {
-    background: #f7f7f6;
+    background: #FFFFFF;
   }
-  p {
-    margin: 20px 0;
+  .bio {
+    padding: 40px 0;
   }
-  .image-wrapper {
+  .bio .image-wrapper {
     display: -ms-grid;
     display: grid;
     justify-items: safe center;
+    padding: 30px 0;
   }
-  .image-wrapper .profile {
-    background: #f7f7f6;
+  .bio .image-wrapper .profile {
+    background: #FFFFFF;
     border-radius: 50%;
-    border: 0.5px dotted #111111;
+    border: 2px solid #111111;
     width: 100%;
     max-width: 150px;
   }
-  .social-media {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    justify-items: safe center;
+  .bio p {
+    margin: 20px auto;
+    max-width: 350px;
+    width: 75%;
   }
-  .social-media a.fab {
+  .bio .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 75%;
+  }
+  .bio .social-media a.fab {
     color: #111111;
     text-decoration: none;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .social-media a.fab:hover {
+  .bio .social-media a.fab:hover {
     color: #bfbfbf;
     -webkit-transform: scale(1.25);
             transform: scale(1.25);
+  }
+  .skills {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .skills h3 {
+    font-family: "Barlow", sans-serif;
+    padding: 30px 0;
+  }
+  .skills .svg-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (75px)[2];
+        grid-template-columns: repeat(2, 75px);
+    grid-column-gap: 75px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills .svg-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (100px)[3];
+        grid-template-columns: repeat(3, 100px);
+    grid-column-gap: 50px;
   }
 }
