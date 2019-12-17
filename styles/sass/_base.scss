@@ -13,7 +13,7 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -21,7 +21,12 @@
   }
 
   h3 {
+    font-family: $barlowSemiCondensedFontFamily;
     font-size: 2.25em;
+  }
+
+  ul {
+    list-style: none;
   }
 
   p, a {
@@ -41,25 +46,55 @@
   }
 
   svg {
-    height: 80px;
-    margin: 15px 0;
+    height: 60px;
+    width: 60px;
+  }
+
+  .fas, .fab {
+    font-size: 4rem;
+  }
+
+  .social-media {
+    a.fab {
+      text-decoration: none;
+      transition: 300ms;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+
+}
+
+@include mq-tablet {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  svg {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@include mq-desktop {
+  .wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .fas, .fab {
     font-size: 3rem;
   }
-  
-}
-
-@include mq-tablet {
-  svg {
-    height: 100px;
-    margin: 25px;
-  }
-
-}
-
-@include mq-desktop {
 
 }
 

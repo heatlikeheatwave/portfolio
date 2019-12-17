@@ -15,18 +15,44 @@
 @include mq-tablet {
   footer {
     height: min-content;
-    .social-media, .twitter {
+    background: $darkGrey;
+    .social-media {
+      display: grid;
+      a.fab {
+        color: $lightGrey;
+        &:hover {
+          color: $whitestWhite;
+        }
+      }
+    }
+    .twitter {
       display: block;
     }
     .twitter {
       height: 100px;
-      width: calc(100% / 3 - 40px);
+      width: calc(100% / 3);
     }
   }
 
 }
 
 @include mq-desktop {
+  footer {
+
+    .social-media {
+      background: $black;
+      height: 70px;
+      margin-top
+      a.fab {
+        color: $lightGrey;
+        &:hover {
+          color: $whitestWhite;
+  
+        }
+      }
+    }
+
+  }
 
 }
 

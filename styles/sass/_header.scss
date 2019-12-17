@@ -25,17 +25,36 @@
       border: 1px solid $whitestWhite;
       border-radius: 3px;
     }
+    a {
+      color: $whitestWhite;
+      font-family: $barlowSemiCondensedFontFamily;
+      font-size: 2rem;
+      padding: 5px 10px;
+      text-decoration: none;
+      &:hover, &:active, &:focus {
+        background: $whitestWhite;
+        border-radius: 3px;
+        color: $darkestGrey;
+      }
+    }
   }
 }
 
 @include mq-tablet {
-  .menu {
-    display: block;
-    a {
-      margin-right: 10px;
+  header {
+    .menu {
+      background: $black;
+      display: flex;
+      height: 75px;
+      justify-content: center;
+      ul {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 75px;
+      }
     }
   }
-
 }
 
 @include mq-desktop {

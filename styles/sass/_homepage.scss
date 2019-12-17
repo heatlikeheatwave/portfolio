@@ -1,44 +1,64 @@
-// @import "./fontawesome/scss/fontawesome.scss";
-// @import "./fontawesome/scss/brands.scss";
-
 @include mq-mobile {
   section {
     background: $whitestWhite;
   }
 
-  .bio {
+  .bio, .skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 40px 0;
+  }
+
+  .social-media-wrapper {
+    margin: 50px 0 30px 0;
+  }
+
+  .svg-wrapper, .social-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .svg-container {
+    row-gap: 60px;
+  }
+
+  .svg-container, .social-media {
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .bio {
+    p {
+      margin: 20px auto;
+      max-width: 500px;
+      width: 75%;
+      &:nth-of-type(2) {
+        margin-top: 0;
+      }
+    }
     .image-wrapper {
       display: grid;
-      justify-items: safe center;
+      justify-items: center;
       padding: 30px 0;
       .profile {
         background: $whitestWhite;
         border-radius: 50%;
         border: 2px solid $black;
         width: 100%;
-        max-width: 150px;
+        max-width: 200px;
       }
     }
-    p {
-      margin: 20px auto;
-      max-width: 350px;
-      width: 75%;
-    }
     .social-media {
-      display: flex;
-      justify-content: space-between;
-      max-width: 350px;
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 75%;
       a.fab {
         color: $black;
-        text-decoration: none;
-        transition: 300ms;
         &:hover {
-          color: $iconHover;
-          transform: scale(1.25);
+          color: $darkGrey;
         }
       }
     }
@@ -46,32 +66,46 @@
 
   .skills {
     margin-top: 5px;
-    text-align: center;
     h3 {
       font-family: $barlowFontFamily;
       padding: 30px 0;
-    }
-    .svg-wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 75px);
-      grid-column-gap: 75px;
-      justify-content: center;
     }
   }
 }
 
 @include mq-tablet {
+  .bio, .skills {
+    width: 75%;
+  }
+  .bio {
+    p {
+      max-width: 600px;
+    }
+    .image-wrapper {
+      .profile {
+        max-width: 300px;
+      }
+    }
+  }
   .skills {
-    .svg-wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-column-gap: 50px;
+    margin-top: 10px;
+    h3 {
+      font-size: 2.75rem;
+      padding: 30px 0 70px 0;
     }
   }
 
 }
 
 @include mq-desktop {
+  
+  .bio {
+    p {
+      max-width: 500px;
+    }
+    
+
+  }
 
 }
 

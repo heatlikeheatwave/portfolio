@@ -33,25 +33,10 @@ $buttonSize: 60px;
       bottom: 15%;
       left: 40%;
       position: absolute;
-      list-style: none;
       li {
         margin: 30px 0;
         &:last-of-type {
           margin: 0;
-        }
-        a {
-          color: $whitestWhite;
-          filter: opacity(0);
-          font-family: $barlowSemiCondensedFontFamily;
-          font-size: 2rem;
-          padding: 5px 10px;
-          text-decoration: none;
-          &:hover, &:active {
-            background: $whitestWhite;
-            border: dotted 1px $whitestWhite;
-            border-radius: 3px;
-            color: $darkestGrey;
-          }
         }
       }
     }
