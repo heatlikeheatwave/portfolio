@@ -6026,7 +6026,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: end;
+            align-items: flex-end;
     font-size: 2rem;
     height: 100%;
     padding: 0 0 75px 0;
@@ -6137,7 +6137,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 @media (min-width: 320px) {
   header {
     background: #f7f7f6;
-    padding: 30px 0 0;
+    padding: 30px;
   }
   header h1 {
     font-family: "Abril Fatface", cursive;
@@ -6173,6 +6173,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 30px 0 0;
+  }
   header .menu {
     background: #111111;
     display: -webkit-box;
@@ -6200,7 +6203,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     background: #111111;
     color: #f7f7f6;
     text-align: center;
-    height: 100px;
+    height: 120px;
     padding: 20px 0;
   }
   footer .social-media, footer .twitter {
@@ -6324,7 +6327,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   .skills h3 {
     font-family: "Barlow", sans-serif;
-    padding: 30px 0;
+    padding: 30px 0 50px 0;
   }
 }
 
@@ -6368,7 +6371,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   .projects-wrapper {
     background: #f7f7f6;
-    margin: 30px auto;
+    margin: 50px auto 30px auto;
   }
   .project-container {
     -webkit-box-align: center;
@@ -6506,20 +6509,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     text-align: center;
   }
   .bio-container {
-    margin: 30px auto;
-    padding: 0 0 30px 0;
-    width: 75%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .bio-container p {
-    padding: 5px;
     margin: 20px 0;
     max-width: 500px;
+    width: 75%;
   }
 }
 
 @media (min-width: 768px) {
   .about h4 {
-    padding: 30px 0;
+    padding: 70px 0;
   }
   .bio-container p {
     margin: 10px auto;

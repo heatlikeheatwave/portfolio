@@ -1,7 +1,7 @@
 @include mq-mobile {
   header {
     background: $white;
-    padding: 30px 0 0;
+    padding: 30px;
     h1 {
       font-family: $abrilFatFaceFontFamily;
       text-transform: uppercase;
@@ -42,6 +42,7 @@
 
 @include mq-tablet {
   header {
+    padding: 30px 0 0;
     .menu {
       background: $black;
       display: flex;

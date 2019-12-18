@@ -8,13 +8,13 @@
     }
   }
   .bio-container {
-    margin: 30px auto;
-    padding: 0 0 30px 0;
-    width: 75%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     p {
-      padding: 5px;
       margin: 20px 0;
       max-width: 500px;
+      width: 75%;
     }
   }
 }
@@ -22,7 +22,7 @@
 @include mq-tablet {
   .about {
     h4 {
-      padding: 30px 0;
+      padding: 70px 0;
     }
   }
   .bio-container {
