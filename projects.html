@@ -7,7 +7,7 @@
     <meta name="Description" content="Heather Hamilton is a Front-End Web Developer who is passionate about beautiful and accessible web apps and building digital products using JavaScript, React, HTML and CSS">
 		<meta name="keywords" content="Heather Hamilton, Portfolio, Front-End Developer, Front-End Web Developer, Frontend Developer, Frontend Web Developer, Front-End Software Engineer, Software Engineer, Frontend Software Engieer, JavaScript Developer, Toronto Canada">
     <link rel="stylesheet" href="styles/main.css"/>
-    <title>Heather Hamilton | Front-End Developer</title>
+    <title>Heather Hamilton Front-End Developer</title>
   </head>
   <body>
     <header>
@@ -20,88 +20,143 @@
         <nav class="mobile-nav">
           <ul>
             <li>
-            	<a href="/" aria-label="Homepage">Home</a>
+            	<a href="index.html" aria-label="Opens new page to homepage">Home</a>
             </li>
             <li>
-            	<a href="projects.html" class="current" aria-label="Projects by Heather Hamilton">Projects</a>
+            	<a href="projects.html" aria-current="page" class="current" aria-label="Opens new page to projects by Heather Hamilton">Projects</a>
             </li>
             <li>
-              <a href="about.html" aria-label="About Heather Hamilton">About</a>
+              <a href="about.html" aria-label="Opens new page to about Heather Hamilton">About</a>
             </li>
-            <li>
-              <a href="contact.html" aria-label="Contact Heather Hamilton">Contact</a>
-            </li>
+            <!-- <li>
+              <a href="contact.html" aria-label="Opens new page to  contact Heather Hamilton">Contact</a>
+            </li> -->
           </ul>
         </nav>
       </div>
       <nav class="menu">
         <ul>
           <li>
-            <a href="/" aria-label="Homepage">Home</a>
+            <a href="index.html" aria-label="Opens new page to homepage">Home</a>
           </li>
           <li>
-            <a href="projects.html" class="current" aria-label="Projects by Heather Hamilton">Projects</a>
+            <a href="projects.html"  aria-current="page" class="current" aria-label="Opens new page to projects by Heather Hamilton">Projects</a>
           </li>
           <li>
-            <a href="about.html" aria-label="About Heather Hamilton">About</a>
+            <a href="about.html" aria-label="Opens new page to about Heather Hamilton">About</a>
           </li>
-          <li>
-            <a href="contact.html" aria-label="Contact Heather Hamilton">Contact</a>
-          </li>
+          <!-- <li>
+            <a href="contact.html" aria-label="Opens new page to  contact Heather Hamilton">Contact</a>
+          </li> -->
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h3></h3>
-        <p></p>
-        <button></button>
-        <!-- project screenshot -->
-        <img src="" alt="">
-        <div>
-          <p>
-            <!-- project date -->
-          </p>
-        </div>
+      <section class="section-title">
+        <h3>Projects</h3>
       </section>
+      <section class="projects-wrapper wrapper">
 
-      <section>
-        <h3></h3>
-        <p></p>
-        <button></button>
-        <!-- project screenshot -->
-        <img src="" alt="">
-        <div>
-          <p>
-            <!-- project date -->
-          </p>
+        <div class="project-container">
+          <div class="image-wrapper">
+            <img src="./assets/detective-pokemon.png" alt="">
+            <div class="date-container">
+              <p>
+                December 2019
+              </p>
+            </div>
+          </div>
+          <div class="content-container">
+            <h4>Detective Pokemon</h4>
+            <p class="project-info">A game made with the UK Police, and Pokemon APIs, ReactJS, and SASS.</p>
+            <div class="link-container"></div>
+              <a href="https://detectivepokemon.github.io/project-six/" class="project-link" target="_blank" aria-label="Opens a new window to the Detective Pokemon page">Live Site</a>
+              <a href="https://github.com/detectivePokemon/project-six/tree/rc-1.0.0" class="project-link" target="_blank" aria-label="Opens a new window to the Detective Pokemon GitHub page">Code Base</a>
+            </div>
+          </div>
         </div>
-      </section>
-      <section>
-        <h3></h3>
-        <p></p>
-        <button></button>
-        <!-- project screenshot -->
-        <img src="" alt="">
-        <div>
-          <p>
-            <!-- project date -->
-          </p>
+      </div>
+        
+      <div class="project-container">
+        <div class="image-wrapper">
+          <img src="./assets/image-search.png" alt="">
+          <div class="date-container">
+            <p>
+              December 2019
+            </p>
+          </div>
         </div>
+        <div class="content-container">
+          <h4>Image Search</h4>
+          <p class="project-info">Image search SPA made with ReactJS, SASS, and the Unsplash API.</p>
+          <div class="link-container">
+            <a href="https://heathergh.github.io/heather-hamilton-project-five/" class="project-link" target="_blank" aria-label="Opens a new window to the Image Search page">Live Site</a>
+            <a href="https://github.com/heathergh/heather-hamilton-project-five" class="project-link" target="_blank" aria-label="Opens a new window to the Image Search GitHub page">Code Base</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-container">
+        <div class="image-wrapper">
+          <img src="./assets/pomemedoro.png" alt="">
+          <div class="date-container">
+            <p>
+              November 2019
+            </p>
+          </div>
+        </div>
+        <div class="content-container">
+          <h4>The Pomemedoro Method</h4>
+          <p class="project-info">An app based on the Pomodoro method. Made with HTML, SASS, jQuery, and the Giphy API</p>
+          <div class="link-container">
+            <a href="https://pairedapiproject.github.io/hiraAndHeatherProjectFour/" class="project-link" target="_blank" aria-label="Opens a new window to The Pomemedoro page">Live Site</a>
+            <a href="https://github.com/pairedApiProject/hiraAndHeatherProjectFour" class="project-link" target="_blank" aria-label="Opens a new window to The Pomemedoro GitHub page">Code Base</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="image-wrapper">
+          <img src="./assets/web-dev-quiz.png" alt="">
+          <div class="date-container">
+            <p>
+              November 2019
+            </p>
+          </div>
+        </div>
+        <div class="content-container">
+          <h4>Web Development Quiz</h4>
+          <p class="project-info">A web development quiz made with HTML, SASS, and jQuery</p>
+          <div class="link-container">
+            <a href="https://heathergh.github.io/heatherHamiltonProjectThree/" class="project-link" target="_blank" aria-label="Opens a new window to the Web Development Quiz page">Live Site</a>
+            <a href="https://github.com/heathergh/heatherHamiltonProjectThree" class="project-link" target="_blank" aria-label="Opens a new window to the Web Development Quiz code">Code Base</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="image-wrapper">
+          <img src="./assets/waste-it.png" alt="">
+          <div class="date-container">
+            <p>
+              September 2019
+            </p>
+          </div>
+        </div>
+        <div class="content-container">
+          <h4>WasteIt</h4>
+          <p class="project-info">A time-wasting app made with HTML, CSS, JavaScript, and the Imgur, DevTO, and NYT APIs.</p>
+          <div class="link-container">
+            <a href="https://heathergh.github.io/wasteIt/" class="project-link" target="_blank" aria-label="Opens a new window to the WasteIt page">Live Site</a>
+            <a href="https://github.com/heathergh/wasteIt" class="project-link" target="_blank" aria-label="Opens a new window to the WasteIt  GitHub page">Code Base</a>
+          </div>
+        </div>
+      </div>
+
       </section>
     </main>
     <footer>
       <p>Copyright 2019 Heather Hamilton</p>
-      <nav class="social-media">
-        <!-- linkedin -->
-        <a href="" class="fab fa-linkedin"></a>
-        <!-- github -->
-        <a href="" class="fab fa-github-square"></a>
-        <!-- twitter -->
-        <a href="" class="fab fa-twitter-square"></a>
-        <!-- instagram -->
-        <a href="" class="fab fa-instagram"></a>
-      </nav>
     </footer>
     <script src="scripts/scripts.js"></script>
   </body>

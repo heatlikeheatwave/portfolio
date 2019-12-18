@@ -1,0 +1,123 @@
+@include mq-mobile {
+  .section-title {
+    background: $darkGrey;
+    color: $whitestWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  .projects-wrapper {
+    background: $white;
+    margin: 30px auto;
+  }
+  .project-container {
+    align-items: center;
+    background: $whitestWhite;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    margin: 50px 0;
+    &:first-of-type {
+      margin: 0 auto;
+    }
+    .content-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      h4 {
+        border-bottom: 1px solid $lightGrey;
+        padding: 30px 0;
+      }
+      p {
+        padding: 5px;
+        margin: 20px 0;
+        max-width: 500px;
+        width: 75%;
+      }
+      .link-container {
+        display: inline;
+      }
+      .project-link {
+        background: $whitestWhite;
+        border: 1px solid $transparent;
+        border-radius: 3px;
+        color: $darkestGrey;
+        font-family: $barlowSemiCondensedFontFamily;
+        font-size: 2rem;
+        padding: 5px 10px;
+        text-decoration: none;
+        &:hover, &:active, &:focus {
+          background: $darkGrey;
+          color: $whitestWhite;
+          padding: 5px 10px;
+        }
+        &:nth-child(1) {
+          margin-right: 20px;
+        }
+        &:nth-child(2) {
+          margin-left: 20px;
+        }
+      }
+    }
+    
+    .image-wrapper {
+      position: relative;
+      img {
+        display: block;
+        width: 100%;
+      }
+      .date-container {
+        background: $darkGrey;
+        border-radius: 3px;
+        bottom: 0;
+        position: absolute;
+        p {
+          color: $whitestWhite;
+          margin: 0;
+          padding: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include mq-tablet {
+  .section-title {
+    height: 200px;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+
+  .project-container {
+    flex-direction: row;
+    max-width: 75%;
+    padding: 0;
+    margin: 50px auto;
+    &:first-of-type {
+      margin: 0 auto;
+    }
+    .content-container {
+      h4 {
+        padding: 0 0 20px 0;
+      }
+      p {
+        margin: 10px 0;
+        max-width: 600px;
+      }
+    }
+    .image-wrapper {
+      object-position: center;
+      max-width: 45%;
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -3,8 +3,8 @@
     background: $black;
     color: $white;
     text-align: center;
-    height: 120px;
-    padding: 20px 0 0;
+    height: 100px;
+    padding: 20px 0;
     .social-media, .twitter {
       display: none;
     }
@@ -15,7 +15,6 @@
 @include mq-tablet {
   footer {
     height: min-content;
-    background: $darkGrey;
     .social-media {
       display: grid;
       a.fab {

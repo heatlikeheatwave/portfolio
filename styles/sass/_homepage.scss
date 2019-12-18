@@ -74,9 +74,6 @@
 }
 
 @include mq-tablet {
-  .bio, .skills {
-    width: 75%;
-  }
   .bio {
     p {
       max-width: 600px;
