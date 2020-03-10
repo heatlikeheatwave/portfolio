@@ -1,7 +1,5 @@
 @mixin mq-mobile {
-  @media (min-width: 320px) {
-      @content;
-  }
+  @content;
 }
 
 @mixin mq-tablet {
