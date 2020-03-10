@@ -11,6 +11,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
     p {
       margin: 20px 0;
       max-width: 500px;
@@ -26,6 +27,7 @@
     }
   }
   .bio-container {
+    padding-bottom: 70px;
     p {
       margin: 10px auto;
       max-width: 600px;
