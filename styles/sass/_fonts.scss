@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow:500|Barlow+Semi+Condensed|Roboto:100,300,400,500display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700|Source+Sans+Pro&display=swap');
 
-$fontAwesomeFontFamily: 'Font Awesome 5 Brands';
-$abrilFatFaceFontFamily: 'Abril Fatface', cursive;
-$robotoFontFamily: 'Roboto', sans-serif;
-$barlowFontFamily: 'Barlow', sans-serif;
-$barlowSemiCondensedFontFamily: 'Barlow Semi Condensed', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$sourceSansPro: 'Source Sans Pro', sans-serif;
 $baseFontSize: 62.5%;
 $lightFontWeight: 300;
 $mediumFontWeight: 400;
-$semiBoldFontWeight: 500;
+$boldFontWeight: 700;
