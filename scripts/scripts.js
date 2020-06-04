@@ -14,6 +14,7 @@ app.toggleAriaLabel = () => {
 
 app.menuButtonEventHandler = e => {
     e.preventDefault();
+
     app.menuButton.classList.toggle('expanded');
     app.nav.classList.toggle('expanded');
     app.toggleAriaLabel();
