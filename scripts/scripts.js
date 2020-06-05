@@ -4,6 +4,8 @@ app.menuButton = document.querySelector('.menu-button');
 
 app.nav = document.querySelector('nav');
 
+app.mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
 app.toggleAriaLabel = () => {
   if (document.querySelector('.expanded')) {
     app.menuButton.setAttribute('aria-label', 'Close the menu');
@@ -13,15 +15,16 @@ app.toggleAriaLabel = () => {
 }
 
 app.menuButtonEventHandler = e => {
-    e.preventDefault();
-
-    app.menuButton.classList.toggle('expanded');
-    app.nav.classList.toggle('expanded');
-    app.toggleAriaLabel();
+  app.menuButton.classList.toggle('expanded');
+  app.nav.classList.toggle('expanded');
+  app.toggleAriaLabel();
 };
 
 app.init = () => {
   app.menuButton.addEventListener('click', app.menuButtonEventHandler);
+  app.mobileNavLinks.forEach(function(link) {
+    link.addEventListener('click', app.menuButtonEventHandler);
+  });
 }
 
 if (document.readyState === "complete") {

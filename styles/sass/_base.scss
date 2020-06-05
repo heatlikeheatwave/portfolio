@@ -9,11 +9,19 @@
   }
 
   body {
-    background: $white;
+    background: $black;
+    color: $white;
+    padding: 5%;
+  }
+
+  h1, h2, h3, h4 {
+    letter-spacing: 1.5px;
   }
 
   h1 {
+    font-weight: 500;
     font-size: 4rem;
+    line-height: 1.4;
   }
 
   h2 {
@@ -21,12 +29,13 @@
   }
 
   h3 {
-    font-family: $barlowSemiCondensedFontFamily;
+    font-family: $sourceFontFamily;
     font-size: 2.5rem;
   }
 
   h4 {
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2.4rem;
   }
 
   ul {
@@ -46,8 +55,8 @@
   }
 
   svg {
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
   }
 
   .fas, .fab {

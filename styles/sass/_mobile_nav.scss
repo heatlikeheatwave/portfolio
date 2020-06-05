@@ -7,10 +7,6 @@ $buttonSize: 60px;
   }
 
   .mobile-nav {
-    -webkit-transition: bottom 500ms ease-in-out;
-    -moz-transition: bottom 500ms ease-in-out;
-    -ms-transition: bottom 500ms ease-in-out;
-    -o-transition: bottom 500ms ease-in-out;
     background: $darkestGrey;
     border: none;
     bottom: -100%;
@@ -31,7 +27,7 @@ $buttonSize: 60px;
         animation: 1200ms fadeIn;
         animation-fill-mode: forwards;
         display: inline-block;
-        width: 85px;
+        width: 100px;
       }
     }
     ul {
@@ -69,7 +65,7 @@ $buttonSize: 60px;
       .fa-bars {
         &::before {
           content: 'X';
-          font-family: $robotoFontFamily;
+          font-family: $poppinsFontFamily;
         }
       }
     }

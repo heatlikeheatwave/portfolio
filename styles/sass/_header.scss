@@ -1,20 +1,10 @@
 @include mq-mobile {
   header {
-    background: $white;
-    padding: 30px;
-    h1 {
-      font-family: $abrilFatFaceFontFamily;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      font-family: $robotoFontFamily;
+    h4 {
+      font-family: $sourceFontFamily;
       font-weight: $lightFontWeight;
+      font-size: 2.4rem;
       padding-bottom: 20px;
-    }
-
-    h1, h2 {
-      text-align: center;
     }
 
     .menu {
@@ -22,19 +12,27 @@
     }
 
     .current {
-      border: 1px solid $whitestWhite;
+      border: 1px solid $white;
       border-radius: 3px;
     }
+
     a {
-      color: $whitestWhite;
-      font-family: $barlowSemiCondensedFontFamily;
+      color: $white;
+      font-family: $poppinsFontFamily;
       font-size: 2rem;
       padding: 5px 10px;
       text-decoration: none;
       &:hover, &:active, &:focus {
-        background: $whitestWhite;
+        transition: ease-in-out 0.5s;
+        background: $white;
         border-radius: 3px;
         color: $darkestGrey;
+      }
+      &:first-child {
+        background: none;
+        border-radius: none;
+        color: $white;
+        padding: 5px 0;
       }
     }
   }

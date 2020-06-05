@@ -1,15 +1,9 @@
 @include mq-mobile {
   footer {
-    background: $black;
-    color: $white;
     text-align: center;
     height: 120px;
     padding: 20px 0;
-    .social-media, .twitter {
-      display: none;
-    }
   }
-  
 }
 
 @include mq-tablet {
@@ -20,7 +14,7 @@
       a.fab {
         color: $lightGrey;
         &:hover {
-          color: $whitestWhite;
+          color: $white;
         }
       }
     }
@@ -45,7 +39,7 @@
       a.fab {
         color: $lightGrey;
         &:hover {
-          color: $whitestWhite;
+          color: $white;
   
         }
       }
