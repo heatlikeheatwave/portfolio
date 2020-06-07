@@ -1,10 +1,10 @@
 @include mq-mobile {
   header {
+    background: $black;
     h4 {
       font-family: $sourceFontFamily;
       font-weight: $lightFontWeight;
       font-size: 2.4rem;
-      padding-bottom: 20px;
     }
 
     .menu {
@@ -32,7 +32,7 @@
         background: none;
         border-radius: none;
         color: $white;
-        padding: 5px 0;
+        padding: 0;
       }
     }
   }
@@ -40,17 +40,15 @@
 
 @include mq-tablet {
   header {
-    padding: 30px 0 0;
+    display: flex;
+    justify-content: space-between;
     .menu {
       background: $black;
       display: flex;
       height: 75px;
       justify-content: center;
-      ul {
-        align-items: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 75px;
+      li {
+        display: inline-block;
       }
     }
   }

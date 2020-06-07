@@ -76,13 +76,6 @@
 }
 
 @include mq-tablet {
-  .section-title {
-    h3 {
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-  }
-
   .project-container {
     flex-direction: row;
     max-width: 75%;

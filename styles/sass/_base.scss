@@ -9,9 +9,7 @@
   }
 
   body {
-    background: $black;
     color: $white;
-    padding: 5%;
   }
 
   h1, h2, h3, h4 {
@@ -52,6 +50,7 @@
 
   section {
     margin: 0 auto;
+    padding: 20px;
   }
 
   svg {

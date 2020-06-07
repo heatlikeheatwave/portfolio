@@ -5926,9 +5926,7 @@ html {
 }
 
 body {
-  background: #111111;
   color: #FFFFFF;
-  padding: 5%;
 }
 
 h1, h2, h3, h4 {
@@ -5969,6 +5967,7 @@ p {
 
 section {
   margin: 0 auto;
+  padding: 20px;
 }
 
 svg {
@@ -6161,11 +6160,14 @@ svg {
   }
 }
 
+header {
+  background: #111111;
+}
+
 header h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
-  padding-bottom: 20px;
 }
 
 header .menu {
@@ -6197,12 +6199,17 @@ header a:first-child {
   background: none;
   border-radius: none;
   color: #FFFFFF;
-  padding: 5px 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
   header {
-    padding: 30px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   header .menu {
     background: #111111;
@@ -6214,15 +6221,8 @@ header a:first-child {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header .menu ul {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 75px;
+  header .menu li {
+    display: inline-block;
   }
 }
 
@@ -6268,20 +6268,6 @@ footer {
   footer .social-media margin-top a.fab:hover {
     color: #FFFFFF;
   }
-}
-
-.bio {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 40px 0 70px;
 }
 
 .social-media-wrapper {
@@ -6335,6 +6321,15 @@ footer {
   justify-items: center;
 }
 
+.bio {
+  background: #111111;
+  padding-bottom: 60px;
+}
+
+.bio h1 {
+  padding: 120px 0 45px 0;
+}
+
 .bio h1, .bio p {
   white-space: pre-wrap;
 }
@@ -6370,6 +6365,7 @@ footer {
 }
 
 .skills {
+  background: #FFFFFF;
   margin-top: 5px;
 }
 
@@ -6505,10 +6501,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .section-title h3 {
-    text-transform: uppercase;
-    font-weight: 500;
-  }
   .project-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
