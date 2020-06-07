@@ -8,10 +8,6 @@
     font-size: $baseFontSize;
   }
 
-  body {
-    color: $white;
-  }
-
   h1, h2, h3, h4 {
     letter-spacing: 1.5px;
   }
@@ -50,16 +46,15 @@
 
   section {
     margin: 0 auto;
-    padding: 20px;
   }
 
   svg {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
 
   .fas, .fab {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .social-media {
@@ -88,8 +83,8 @@
   }
 
   svg {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
 }
 
