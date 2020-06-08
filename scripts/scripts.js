@@ -14,7 +14,7 @@ app.toggleAriaLabel = () => {
   }
 }
 
-app.menuButtonEventHandler = e => {
+app.menuButtonEventHandler = () => {
   app.menuButton.classList.toggle('expanded');
   app.nav.classList.toggle('expanded');
   app.toggleAriaLabel();
