@@ -1,14 +1,18 @@
 @include mq-mobile {
+  h2 {
+    color: $white;
+  }
   .projects-wrapper {
-    background: $white;
+    background: $black;
     margin: 50px auto 30px auto;
   }
   .project-container {
     align-items: center;
-    background: $white;
+    background: $black;
+    color: $white;
     display: flex;
     flex-direction: column;
-    padding: 0 0 30px 0;
+    padding: 0 0 120px 0;
     margin: 50px 0;
     &:first-of-type {
       margin: 0 auto;
@@ -18,32 +22,38 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      h4 {
+      h3 {
         border-bottom: 1px solid $lightGrey;
         padding: 30px 0;
       }
       p {
-        padding: 5px;
-        margin: 20px 0;
+        font-family: $poppinsFontFamily;
+        font-size: 2.5rem;
+        font-weight: $mediumFontWeight;
+        line-height: 1.6;
+        margin: 40px 0;
         max-width: 500px;
         width: 75%;
       }
       .link-container {
-        display: inline;
+        display: flex;
+        justify-content: space-between;
       }
       .project-link {
         background: $white;
         border: 1px solid $transparent;
         border-radius: 3px;
         color: $darkestGrey;
+        display: inline-block;
         font-family: $poppinsFontFamily;
-        font-size: 2rem;
-        padding: 5px 10px;
+        font-size: 2.2rem;
+        height:35px;
         text-decoration: none;
+        text-align: center;
+        width: 140px;
         &:hover, &:active, &:focus {
           background: $darkGrey;
-          color: $black;
-          padding: 5px 10px;
+          color: $white;
         }
         &:nth-child(1) {
           margin-right: 20px;
@@ -53,7 +63,7 @@
         }
       }
     }
-    
+
     .image-wrapper {
       position: relative;
       img {
@@ -62,13 +72,15 @@
       }
       .date-container {
         background: $darkGrey;
-        border-radius: 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         bottom: 0;
+        color: $white;
         position: absolute;
         p {
-          margin: 0;
-          padding: 5px 10px;
-          width: 100%;
+          padding: 10px 15px;
         }
       }
     }

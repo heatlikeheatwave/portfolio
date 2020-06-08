@@ -9,7 +9,12 @@
   }
 
   h1, h2, h3, h4 {
+    font-family: $sourceFontFamily;
     letter-spacing: 1.5px;
+  }
+
+  h1, h2 {
+    padding-top: 120px;
   }
 
   h1 {
@@ -19,12 +24,12 @@
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: center;
   }
 
   h3 {
-    font-family: $sourceFontFamily;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   h4 {
