@@ -1,33 +1,4 @@
 @include mq-mobile {
-  .social-media-wrapper {
-    margin: 50px 0 30px 0;
-  }
-
-  .social-media-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
-    width: 100%;
-  }
-
-  .svg-container {
-    align-content: center;
-    align-items: center;
-    display: grid;
-    grid-auto-rows: 150px;
-    grid-gap: 60px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    justify-items: center;
-  }
-
-  .social-media {
-    display: grid;
-    column-gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-  }
-
   .bio {
     background: $black;
     color: $white;
@@ -36,15 +7,12 @@
       padding: 120px 0 45px 0;
     }
 
-    h1, p {
-      white-space: pre-wrap;
-    }
-
     .subheading {
       font-family: $sourceFontFamily;
       font-style: italic;
       font-weight: 300;
       margin: 50px 0;
+      white-space: nowrap;
     }
 
     .image-wrapper {
@@ -59,22 +27,13 @@
         max-width: 300px;
       }
     }
-
-    .social-media {
-      a.fab {
-        color: $black;
-        &:hover {
-          color: $darkGrey;
-        }
-      }
-    }
   }
-
+  // SKILLS SECTION
   .skills {
     background: $white;
     height: 100%;
-    min-height: 50vh;
-    h3 {
+    min-height: 350px;
+    h2 {
       display: inline;
     }
     details {
@@ -84,23 +43,26 @@
     }
     summary {
       display: list-item;
-      padding: 30px 0 50px 0;
+      padding-bottom: 20px;
       text-align: center;
       &::marker {
         font-size: 2.5rem;
       }
     }
+    .svg-container {
+      align-content: center;
+      align-items: center;
+      display: grid;
+      grid-auto-rows: 150px;
+      grid-gap: 60px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      justify-items: center;
+    }
   }
+  // SKILLS SECTION
 }
 
 @include mq-tablet {
-  svg {
-    &:hover {
-      transform: scale(1.2);
-      transition: ease-in-out 0.5s;
-    }
-  }
-
   .bio {
     p {
       max-width: 600px;
@@ -111,14 +73,21 @@
       }
     }
   }
-
+  // SKILLS SECTION
   .skills {
     margin-top: 10px;
-    h3 {
+    h2 {
       font-size: 2.75rem;
       padding: 30px 0 70px 0;
     }
+    svg {
+      &:hover {
+        transform: scale(1.25);
+        transition: ease-in-out 0.5s;
+      }
+    }
   }
+  // SKILLS SECTION
 }
 
 @include mq-desktop {

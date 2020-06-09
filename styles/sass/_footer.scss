@@ -1,8 +1,53 @@
 @include mq-mobile {
   footer {
+    background: $black;
+    color: $white;
+    font-family: $poppinsFontFamily;
     text-align: center;
-    height: 120px;
     padding: 20px 0;
+    p {
+      padding: 30px 0;
+    }
+    .footer-nav {
+      ul {
+        margin: 0 auto;
+        text-align: left;
+        width: 75%;
+      }
+      li {
+        padding: 20px 0;
+        text-align: center;
+        a {
+          color: $white;
+          display: inline-block;
+          height: 55px;
+          padding: 10px;
+          text-decoration: none;
+          width: 110px;
+          &:hover, &:active, &:focus {
+            color: $lightGrey;
+            border-bottom: 1px solid $lightGrey;
+          }
+        }
+      }
+    }
+    .social-media-wrapper {
+      max-width: 500px;
+      padding: 20px 0 30px 0;
+    }
+    .social-media {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 75%;
+    }
+    a.fab {
+      color: $white;
+      padding: 10px;
+      &:hover, &:active, &:focus {
+        color: $lightGrey;
+      }
+    }
   }
 }
 
@@ -40,7 +85,7 @@
         color: $lightGrey;
         &:hover {
           color: $white;
-  
+
         }
       }
     }

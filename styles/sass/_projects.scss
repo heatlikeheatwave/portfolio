@@ -1,65 +1,52 @@
 @include mq-mobile {
-  h2 {
-    color: $white;
-  }
   .projects-wrapper {
     background: $black;
-    margin: 50px auto 30px auto;
+    h2 {
+      color: $white;
+      padding-bottom: 20px;
+      text-align: center;
+    }
   }
   .project-container {
-    align-items: center;
     background: $black;
     color: $white;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 120px 0;
-    margin: 50px 0;
+    padding: 0 0 30px 0;
     &:first-of-type {
       margin: 0 auto;
     }
     .content-container {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
       h3 {
         border-bottom: 1px solid $lightGrey;
         padding: 30px 0;
+        margin: 0 auto;
+        text-align: center;
       }
       p {
         font-family: $poppinsFontFamily;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: $mediumFontWeight;
-        line-height: 1.6;
-        margin: 40px 0;
+        margin: 40px auto;
         max-width: 500px;
+      }
+      h3, p, .link-container {
         width: 75%;
       }
       .link-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin: 0 auto;
       }
       .project-link {
-        background: $white;
-        border: 1px solid $transparent;
-        border-radius: 3px;
-        color: $darkestGrey;
+        color: $white;
         display: inline-block;
         font-family: $poppinsFontFamily;
         font-size: 2.2rem;
-        height:35px;
+        height: 40px;
+        padding-bottom: 20px;
         text-decoration: none;
         text-align: center;
-        width: 140px;
         &:hover, &:active, &:focus {
-          background: $darkGrey;
-          color: $white;
-        }
-        &:nth-child(1) {
-          margin-right: 20px;
-        }
-        &:nth-child(2) {
-          margin-left: 20px;
+          border-bottom: 1px solid $lightGrey;
         }
       }
     }
@@ -68,6 +55,8 @@
       position: relative;
       img {
         display: block;
+        height: 200px;
+        object-fit: cover;
         width: 100%;
       }
       .date-container {
