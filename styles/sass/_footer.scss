@@ -37,9 +37,11 @@
     }
     .social-media {
       display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-      width: 75%;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      width: 100%;
+
     }
     a.fab {
       color: $white;
