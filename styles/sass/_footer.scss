@@ -3,51 +3,49 @@
     background: $black;
     color: $white;
     font-family: $poppinsFontFamily;
-    text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     p {
       padding: 30px 0;
     }
     .footer-nav {
-      ul {
-        margin: 0 auto;
-        text-align: left;
-        width: 75%;
-      }
       li {
-        padding: 20px 0;
-        text-align: center;
+        padding: 10px 0;
         a {
           color: $white;
           display: inline-block;
           height: 55px;
-          padding: 10px;
+          padding: 10px 0;
           text-decoration: none;
-          width: 110px;
+          width: max-content;
           &:hover, &:active, &:focus {
-            color: $lightGrey;
-            border-bottom: 1px solid $lightGrey;
+            color: $basaltGrey;
+            border-bottom: 1px solid $basaltGrey;
           }
         }
       }
     }
     .social-media-wrapper {
       max-width: 500px;
-      padding: 20px 0 30px 0;
+      padding: 20px 0;
     }
     .social-media {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 500px;
-      width: 100%;
-
+      display: grid;
+      grid-column-gap: 93px;
+      grid-template-columns: repeat(3, 1fr);
     }
     a.fab {
       color: $white;
-      padding: 10px;
+      &:nth-of-type(1) {
+        padding: 10px 10px 10px 0;
+      }
+      &:nth-of-type(2) {
+        padding: 10px;
+      }
+      &:nth-of-type(3) {
+        padding: 10px 0 10px;
+      }
       &:hover, &:active, &:focus {
-        color: $lightGrey;
+        color: $basaltGrey;
       }
     }
   }
@@ -59,18 +57,11 @@
     .social-media {
       display: grid;
       a.fab {
-        color: $lightGrey;
+        color: $basaltGrey;
         &:hover {
           color: $white;
         }
       }
-    }
-    .twitter {
-      display: block;
-    }
-    .twitter {
-      height: 100px;
-      width: calc(100% / 3);
     }
   }
 
@@ -84,7 +75,7 @@
       height: 70px;
       margin-top
       a.fab {
-        color: $lightGrey;
+        color: $basaltGrey;
         &:hover {
           color: $white;
 
