@@ -1,9 +1,10 @@
 @include mq-mobile {
   .projects-wrapper {
     background: $black;
+    padding: 120px 20px;
     h2 {
       color: $white;
-      padding-bottom: 20px;
+      padding-bottom: 35px;
       text-align: center;
     }
   }
@@ -11,65 +12,84 @@
     background: $black;
     color: $white;
     padding: 0 0 30px 0;
-    &:first-of-type {
-      margin: 0 auto;
+    &:nth-of-type(1) {
+      > .image-wrapper {
+        background: #C5979D;
+      }
+    }
+    &:nth-of-type(2) {
+      > .image-wrapper {
+        background: #A0B9BF;
+      }
+    }
+    &:nth-of-type(3) {
+      > .image-wrapper {
+        background: #453643;
+      }
+    }
+    &:nth-of-type(4) {
+      > .image-wrapper {
+        background: #FFB100;
+      }
+    }
+    &:nth-of-type(5) {
+      > .image-wrapper {
+        background: #006C67;
+      }
     }
     .content-container {
       h3 {
-        border-bottom: 1px solid $lightGrey;
+        border-bottom: 1px solid $basaltGrey;
+        font-size: 2.5rem;
         padding: 30px 0;
         margin: 0 auto;
         text-align: center;
       }
       p {
         font-family: $poppinsFontFamily;
-        font-size: 2.2rem;
         font-weight: $mediumFontWeight;
-        margin: 40px auto;
+        margin: 20px auto;
         max-width: 500px;
       }
-      h3, p, .link-container {
-        width: 75%;
+      p, a {
+        font-size: 2.2rem;
+      }
+      .date {
+        font-size: 2rem;
+        font-style: italic;
+        text-align: center;
       }
       .link-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin: 0 auto;
       }
       .project-link {
         color: $white;
         display: inline-block;
         font-family: $poppinsFontFamily;
-        font-size: 2.2rem;
-        height: 40px;
+        height: 50px;
         padding-bottom: 20px;
         text-decoration: none;
         text-align: center;
         &:hover, &:active, &:focus {
-          border-bottom: 1px solid $lightGrey;
+          border-bottom: 1px solid $basaltGrey;
         }
       }
     }
 
     .image-wrapper {
       position: relative;
+      padding: 25px;
       img {
         display: block;
-        height: 200px;
+        height: 100%;
         object-fit: cover;
         width: 100%;
-      }
-      .date-container {
-        background: $darkGrey;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 3px;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        bottom: 0;
-        color: $white;
-        position: absolute;
-        p {
-          padding: 10px 15px;
+        object-position: 50% 50%;
+        transition: transform ease 400ms;
+        &:hover {
+            transform: scale(1.1);
         }
       }
     }
