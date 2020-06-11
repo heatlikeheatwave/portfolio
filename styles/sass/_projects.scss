@@ -1,17 +1,17 @@
 @include mq-mobile {
-  .projects-wrapper {
+  .projects {
     background: $black;
-    padding: 120px 20px;
+    padding: 25% 10%;
     h2 {
       color: $white;
       padding-bottom: 35px;
       text-align: center;
     }
   }
-  .project-container {
+  .project-card {
     background: $black;
     color: $white;
-    padding: 0 0 30px 0;
+    padding: 0 0 60px 0;
     &:nth-of-type(1) {
       > .image-wrapper {
         background: #C5979D;
@@ -37,50 +37,36 @@
         background: #006C67;
       }
     }
-    .content-container {
-      h3 {
-        border-bottom: 1px solid $basaltGrey;
-        font-size: 2.5rem;
-        padding: 30px 0;
-        margin: 0 auto;
-        text-align: center;
-      }
+    .content {
       p {
         font-family: $poppinsFontFamily;
-        font-weight: $mediumFontWeight;
-        margin: 20px auto;
-        max-width: 500px;
-      }
-      p, a {
-        font-size: 2.2rem;
-      }
-      .date {
-        font-size: 2rem;
-        font-style: italic;
-        text-align: center;
       }
       .link-container {
         display: flex;
         justify-content: space-around;
-        margin: 0 auto;
       }
-      .project-link {
-        color: $white;
-        display: inline-block;
-        font-family: $poppinsFontFamily;
-        height: 50px;
-        padding-bottom: 20px;
-        text-decoration: none;
-        text-align: center;
-        &:hover, &:active, &:focus {
-          border-bottom: 1px solid $basaltGrey;
-        }
+    }
+    .project-info {
+      margin: 20px auto;
+    }
+    .heading-date-container {
+      border-bottom: 1px solid $basaltGrey;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      padding: 30px 0 15px;
+      h3 {
+        padding-bottom: 15px 0;
+      }
+      p {
+        font-size: 1.8rem;
+        line-height: 1.6;
       }
     }
 
     .image-wrapper {
       position: relative;
-      padding: 25px;
+      padding: 10%;
       img {
         display: block;
         height: 100%;
@@ -97,30 +83,41 @@
 }
 
 @include mq-tablet {
-  .project-container {
-    flex-direction: row;
-    max-width: 75%;
+  .projects {
+    background: $black;
+    padding: 10% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 65px;
+    grid-row-gap: 45px;
+    h2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  .project-card {
     padding: 0;
-    margin: 50px auto;
-    &:first-of-type {
-      margin: 0 auto;
+    h3 {
+      margin-bottom: 10px;
+      width: 100%;
     }
-    .content-container {
-      h4 {
-        padding: 0 0 20px 0;
-      }
-      p {
-        margin: 10px 0;
-        max-width: 600px;
-      }
+    .date {
+      font-size: 2
     }
-    .image-wrapper {
-      object-position: center;
-      max-width: 45%;
-      img {
-        height: 250px;
-        object-fit: cover;
-      }
-    }
+  }
+  .image-wrapper {
+    height: 245px;
+  }
+  .project-info {
+    height: 110px;
+  }
+}
+
+@include mq-desktop {
+  .projects {
+    display: grid;
+    grid-auto-rows: 550px;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
