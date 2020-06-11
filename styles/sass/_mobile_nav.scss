@@ -10,8 +10,6 @@
     box-shadow: none;
     cursor: pointer;
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
     justify-content: center;
     font-size: 2rem;
     height: 100%;
@@ -24,7 +22,7 @@
     z-index: 1;
     &.expanded {
       background: $black;
-      transform: translateY(0%);
+      transform: translate(-39%, 5%);
       a {
         animation: 1s fadeIn;
         animation-fill-mode: forwards;
@@ -54,11 +52,6 @@
     border: none;
     box-shadow: none;
     cursor: 'pointer';
-    height: 60px;
-    position: absolute;
-    top: 6px;
-    right: 0;
-    width: 60px;
     user-select: none;
     z-index: 2;
     .fa-bars {
