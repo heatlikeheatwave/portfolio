@@ -1,54 +1,38 @@
 @include mq-mobile {
   header {
     background: $black;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
     h4 {
-      font-family: $sourceFontFamily;
+      color: $white;
+      font-family: $poppinsFontFamily;
+      font-size: 2.2rem;
       font-weight: $lightFontWeight;
-    }
-
-    .menu {
-      display: none;
-    }
-
-    .current {
-      border: 1px solid $white;
-      border-radius: 3px;
     }
 
     a {
       color: $white;
-      font-family: $poppinsFontFamily;
-      font-size: 2.2rem;
-      padding: 5px 10px;
       text-decoration: none;
-      &:first-child {
-        background: none;
-        border-radius: none;
-        color: $white;
-        padding: 0;
-      }
-      &:hover, &:active, &:focus {
-        transition: ease-in-out 0.5s;
-        background: $white;
-        border-radius: 3px;
-        color: $darkestGrey;
-      }
+    }
+
+    .menu {
+      display: none;
     }
   }
 }
 
 @include mq-tablet {
   header {
-    display: flex;
-    justify-content: space-between;
+    padding: 5%;
     .menu {
-      background: $black;
-      display: flex;
-      height: 75px;
-      justify-content: center;
+      display: block;
       li {
         display: inline-block;
+        margin-left: 20px;
+        &:first-of-type {
+          margin-left: 0;
+        }
       }
     }
   }
