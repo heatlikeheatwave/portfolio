@@ -11,10 +11,8 @@
     <title>Heather Hamilton</title>
   </head>
   <body>
-    <header>
-      <h4>
-        <a href="index.html">Heather Hamilton</a>
-      </h4>
+    <header class="wrapper">
+      <h4>Heather Hamilton</h4>
       <div class="mobile-menu-wrapper">
         <button class="menu-button" aria-label="Open menu">
           <span class="fas fa-bars regular"></span>
@@ -44,18 +42,28 @@
           <li>
             <a href="#about" aria-label="about section">About</a>
           </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/hghamilton/" class="fab fa-linkedin-in brand" aria-label="Opens new page to Heather Hamilton's LinkedIn"></a>
+          </li>
+          <li>
+            <a href="https://github.com/heathergh" class="fab fa-github brand" aria-label="Opens new page to Heather Hamilton's GitHub"></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/heatherdevsweb" class="fab fa-twitter brand" aria-label="Opens new page to Heather Hamilton's Twitter"></a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="bio wrapper">
+    <main class="wrapper">
+      <section class="bio">
         <h1>Heather Hamilton is a Toronto-based Front End Developer, focusing on creating beautiful, responsive and accessible user experiences.</h1>
         <p class="subheading">She is currently available for hire</p>
         <div class="image-wrapper">
           <img src="./assets/Heather_Hamilton.jpg" alt="Heather Hamilton" class="profile">
         </div>
       </section>
-      <section class="skills wrapper" id="skills">
+      <section class="skills" id="skills">
         <details>
           <summary>
             <h2>
@@ -250,9 +258,9 @@
         </details>
       </section>
 
-      <section class="projects-wrapper wrapper" id="projects">
+      <section class="projects" id="projects">
         <h2>Projects</h2>
-        <div class="project-container">
+        <div class="project-card">
           <div class="image-wrapper">
             <img src="./assets/blog-clone.png" alt="">
           </div>
@@ -269,7 +277,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-card">
           <div class="image-wrapper">
             <img src="./assets/detective-pokemon.png" alt="">
           </div>
@@ -286,7 +294,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-card">
           <div class="image-wrapper">
             <img src="./assets/image-search.png" alt="">
           </div>
@@ -303,7 +311,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-card">
           <div class="image-wrapper">
             <img src="./assets/web-dev-quiz.png" alt="">
           </div>
@@ -320,7 +328,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-card">
           <div class="image-wrapper">
             <img src="./assets/waste-it.png" alt="">
           </div>
@@ -338,7 +346,7 @@
         </div>
       </section>
 
-      <section class="about wrapper" id="about">
+      <section class="about" id="about">
         <h2>My Background</h2>
         <p>
           I fell in love with coding while working at a tech start-up. I was at a demo and I thought it was so, for lack of a better word, <span class="italic">cool</span> that the engineering team had created a mobile app together.
@@ -365,11 +373,8 @@
       </nav>
       <div class="social-media-wrapper">
         <nav class="social-media">
-          <!-- linkedin -->
           <a href="https://www.linkedin.com/in/hghamilton/" class="fab fa-linkedin-in brand" aria-label="Opens new page to Heather Hamilton's LinkedIn"></a>
-          <!-- github -->
           <a href="https://github.com/heathergh" class="fab fa-github brand" aria-label="Opens new page to Heather Hamilton's GitHub"></a>
-          <!-- twitter -->
           <a href="https://twitter.com/heatherdevsweb" class="fab fa-twitter brand" aria-label="Opens new page to Heather Hamilton's Twitter"></a>
         </nav>
       </div>
