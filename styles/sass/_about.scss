@@ -2,10 +2,12 @@
   .about {
     padding: 25% 10%;
     h2 {
-      padding-bottom: 15px;
+      padding: 70px 0 15px 0;
       text-align: center;
     }
     p {
+      font-family: $sourceFontFamily;
+      font-weight: $lightFontWeight;
       line-height: 1.6;
       margin: 20px 0;
     }
@@ -14,10 +16,7 @@
 
 @include mq-tablet {
   .about {
-    p {
-      margin: 10px auto;
-      max-width: 600px;
-    }
+    padding: 10% 5%;
   }
 
 }
