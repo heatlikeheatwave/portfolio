@@ -47,7 +47,7 @@
       }
     }
     .project-info {
-      margin: 20px auto;
+      margin: 40px auto;
     }
     .heading-date-container {
       border-bottom: 1px solid $basaltGrey;
@@ -68,10 +68,8 @@
       position: relative;
       padding: 10%;
       img {
-        display: block;
         height: 100%;
         object-fit: cover;
-        width: 100%;
         object-position: 50% 50%;
         transition: transform ease 400ms;
         &:hover {
@@ -114,10 +112,5 @@
 }
 
 @include mq-desktop {
-  .projects {
-    display: grid;
-    grid-auto-rows: 550px;
-    grid-gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
+
 }
