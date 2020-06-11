@@ -3,7 +3,11 @@
     background: $black;
     color: $white;
     font-family: $poppinsFontFamily;
-    padding: 20px;
+    padding: 10%;
+    & p:nth-of-type(1) {
+      font-size: 2rem;
+      text-align: center;
+    }
     p {
       padding: 30px 0;
     }
@@ -25,12 +29,11 @@
       }
     }
     .social-media-wrapper {
-      max-width: 500px;
       padding: 20px 0;
     }
     .social-media {
       display: grid;
-      grid-column-gap: 93px;
+      grid-column-gap: 75px;
       grid-template-columns: repeat(3, 1fr);
     }
     a.fab {
@@ -82,9 +85,7 @@
         }
       }
     }
-
   }
-
 }
 
 @include mq-retina {
