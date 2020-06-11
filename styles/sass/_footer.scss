@@ -20,9 +20,8 @@
       padding: 20px 0;
     }
     .social-media {
-      display: grid;
-      grid-column-gap: 75px;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      justify-content: space-between;
     }
     a.fab {
       color: $white;
@@ -43,7 +42,12 @@
 }
 
 @include mq-tablet {
-
+  footer {
+    .social-media {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 
 }
 
