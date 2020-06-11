@@ -14,18 +14,6 @@
     .footer-nav {
       li {
         padding: 10px 0;
-        a {
-          color: $white;
-          display: inline-block;
-          height: 55px;
-          padding: 10px 0;
-          text-decoration: none;
-          width: max-content;
-          &:hover, &:active, &:focus {
-            color: $basaltGrey;
-            border-bottom: 1px solid $basaltGrey;
-          }
-        }
       }
     }
     .social-media-wrapper {
@@ -55,37 +43,12 @@
 }
 
 @include mq-tablet {
-  footer {
-    height: min-content;
-    .social-media {
-      display: grid;
-      a.fab {
-        color: $basaltGrey;
-        &:hover {
-          color: $white;
-        }
-      }
-    }
-  }
+
 
 }
 
 @include mq-desktop {
-  footer {
 
-    .social-media {
-      background: $black;
-      height: 70px;
-      margin-top
-      a.fab {
-        color: $basaltGrey;
-        &:hover {
-          color: $white;
-
-        }
-      }
-    }
-  }
 }
 
 @include mq-retina {
