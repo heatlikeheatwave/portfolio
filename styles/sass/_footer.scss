@@ -12,42 +12,18 @@
       padding: 30px 0;
     }
     .footer-nav {
+      text-align: center;
       li {
         padding: 10px 0;
-      }
-    }
-    .social-media-wrapper {
-      padding: 20px 0;
-    }
-    .social-media {
-      display: flex;
-      justify-content: space-between;
-    }
-    a.fab {
-      color: $white;
-      &:nth-of-type(1) {
-        padding: 10px 10px 10px 0;
-      }
-      &:nth-of-type(2) {
-        padding: 10px;
-      }
-      &:nth-of-type(3) {
-        padding: 10px 0 10px;
-      }
-      &:hover, &:active, &:focus {
-        color: $basaltGrey;
+        &.icon {
+          margin: 40px 0 20px;
+        }
       }
     }
   }
 }
 
 @include mq-tablet {
-  footer {
-    .social-media {
-      display: flex;
-      justify-content: space-evenly;
-    }
-  }
 
 }
 

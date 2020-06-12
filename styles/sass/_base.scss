@@ -64,14 +64,20 @@
     height: 50px;
     padding-bottom: 20px;
     text-decoration: none;
-    width: max-content;
     &:hover, &:active, &:focus {
       color: $basaltGrey;
       border-bottom: 1px solid $basaltGrey;
     }
   }
 
+  nav {
+    a:not(.fab) {
+      width: 95px;
+    }
+  }
+
   .fab {
+    color: $white;
     text-decoration: none;
     &:hover, &:active, &:focus {
       color: $basaltGrey;
@@ -80,6 +86,16 @@
 
   .italic {
     font-style: italic;
+  }
+
+  .icon {
+    display: inline-block;
+    a {
+      width: 60px;
+      &:hover, &:active, &:focus {
+        border-bottom: none;
+      }
+    }
   }
 }
 
