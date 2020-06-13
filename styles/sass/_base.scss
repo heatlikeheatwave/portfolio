@@ -8,6 +8,10 @@
     font-size: $baseFontSize;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   h1, h2, h3, h4 {
     font-family: $sourceFontFamily;
   }
@@ -104,14 +108,33 @@
 }
 
 @include mq-desktop {
-  .fab {
-    font-size: 2.4rem;
-  }
-}
-
-@include mq-retina {
   .wrapper {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  .fab {
+    font-size: 2.4rem;
+  }
+
+  header, footer, .bio, .projects {
+    position: relative;
+    &::before, &::after {
+      background: $black;
+      bottom: 0;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 50vw;
+    }
+    &::before {
+      right: 100%;
+    }
+    &::after {
+      left: 100%;
+    }
+  }
+}
+
+@include mq-retina {
 }
