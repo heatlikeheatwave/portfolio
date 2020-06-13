@@ -1,24 +1,17 @@
 @include mq-mobile {
   .skills {
-    background: $white;
     height: 100%;
     min-height: 350px;
     padding: 25% 0;
     h2 {
       display: inline;
     }
-    details {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
     summary {
+      font-size: 2.2rem;
       display: list-item;
-      padding-bottom: 25px;
+      margin: 0 auto 25px;
       text-align: center;
-      &::marker {
-        font-size: 2.5rem;
-      }
+      width: 150px;
     }
     .svg-container {
       align-content: center;
@@ -36,7 +29,7 @@
   .skills {
     padding: 10% 5%;
     summary {
-      padding: 70px 0;
+      margin: 70px 0;
       &::marker {
         font-size: 2.8rem;
       }
