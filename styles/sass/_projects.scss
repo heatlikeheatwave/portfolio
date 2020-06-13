@@ -70,7 +70,7 @@
       img {
         height: 100%;
         object-fit: cover;
-        object-position: 50% 50%;
+        object-position: 50% 0;
         transition: transform ease 400ms;
         &:hover {
             transform: scale(1.1);
@@ -112,5 +112,7 @@
 }
 
 @include mq-desktop {
-
+  .image-wrapper {
+    height: 400px;
+  }
 }
