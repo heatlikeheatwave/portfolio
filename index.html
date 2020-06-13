@@ -28,6 +28,15 @@
             <li>
               <a href="#about" aria-label="about section">About</a>
             </li>
+            <li class="icon">
+              <a href="https://www.linkedin.com/in/hghamilton/" class="fab fa-linkedin-in brand" aria-label="Opens new page to Heather Hamilton's LinkedIn"></a>
+            </li>
+            <li class="icon">
+              <a href="https://github.com/heathergh" class="fab fa-github brand" aria-label="Opens new page to Heather Hamilton's GitHub"></a>
+            </li>
+            <li class="icon">
+              <a href="https://twitter.com/heatherdevsweb" class="fab fa-twitter brand" aria-label="Opens new page to Heather Hamilton's Twitter"></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -357,22 +366,37 @@
       </section>
 
       <section class="about" id="about">
+        <h2>About</h2>
         <img
-          srcset="./assets/my-background-mobile-up.png 768w,
-                  ./assets/my-background-tablet-up.png 1080w"
-          sizes="(max-width: 1080px) 768px, 1080px"
-          src="./assets/my-background-mobile-up.png"
-          alt="person in sweater using laptop computer on a wooden table"
+          srcset="
+            ./assets/my-background-mobile.png 480w,
+            ./assets/my-background-tablet.png 770w,
+            ./assets/my-background-desktop.png 1404w,
+            ./assets/my-background-retina.png 2000w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 770px) 770px,
+            (max-width: 1404px) 1404px,
+            2000px
+          "
+          src="./assets/my-background-retina.png"
+          alt="person wearing a sweater using a laptop computer at a wooden table"
         >
-        <h2>My Background</h2>
         <p>
-          I fell in love with coding while working at a tech start-up. I was at a demo and I thought it was so, for lack of a better word, <span class="italic">cool</span> that the engineering team had created a mobile app together.
+          After I finished my undergraduate degree, I knew I didn't want to become an urban planner and I wasn't sure what to do next. A friend suggested I apply to the tech start-up where they worked, and it was there that I fell in love with coding. Seeing their product solve real-world problems as well as the collaborative and agile culture of the engineering team inspired me to go to my first coding workshop.
         </p>
+
         <p>
-          Seeing their product solve real-world problems as well as their collaborative and agile culture made it clear that development was the right career path: one where I could create, learn, and build solutions to improve people's lives.
+          Since I was a child I've loved creating and learning, and in that workshop, I discovered coding required both. It was clear that coding was the right career path for me: one where I could combine my desire to create and learn to help improve people's lives. You can see my experience since then on <a href="https://www.linkedin.com/in/hghamilton/" class="highlight">LinkedIn</a>.
         </p>
+
+        <p>
+          Outside of work I enjoy running, cycling, and I pursue my love of creating by making ceramics and nurturing my expanding collection of houseplants. I value sharing knowledge to help others, and I've been fortunate enough to do that by mentoring at workshops organized by Canada Learning Code and Lighthouse Labs.
+        </p>
+
       </section>
-      </main>
+    </main>
 
     <footer>
       <nav class="footer-nav">
@@ -388,13 +412,19 @@
           </li>
         </ul>
       </nav>
-      <div class="social-media-wrapper">
-        <nav class="social-media">
-          <a href="https://www.linkedin.com/in/hghamilton/" class="fab fa-linkedin-in brand" aria-label="Opens new page to Heather Hamilton's LinkedIn"></a>
-          <a href="https://github.com/heathergh" class="fab fa-github brand" aria-label="Opens new page to Heather Hamilton's GitHub"></a>
-          <a href="https://twitter.com/heatherdevsweb" class="fab fa-twitter brand" aria-label="Opens new page to Heather Hamilton's Twitter"></a>
-        </nav>
-      </div>
+      <nav class="social-media">
+        <ul>
+          <li class="icon">
+            <a href="https://www.linkedin.com/in/hghamilton/" class="fab fa-linkedin-in brand" aria-label="Opens new page to Heather Hamilton's LinkedIn"></a>
+          </li>
+          <li class="icon">
+            <a href="https://github.com/heathergh" class="fab fa-github brand" aria-label="Opens new page to Heather Hamilton's GitHub"></a>
+          </li>
+          <li class="icon">
+            <a href="https://twitter.com/heatherdevsweb" class="fab fa-twitter brand" aria-label="Opens new page to Heather Hamilton's Twitter"></a>
+          </li>
+        </ul>
+      </nav>
       <p>&copy; 2020 Heather Hamilton</p>
     </footer>
     <script src="scripts/scripts.js"></script>
