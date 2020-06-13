@@ -26,12 +26,19 @@
       a {
         animation: 1s fadeIn;
         animation-fill-mode: forwards;
+        &:not(.fab) {
+          width: 95px;
+        }
       }
     }
-
     li {
       margin: 30px 0;
-      text-align: center;
+    }
+    .icon {
+      display: inline;
+      a {
+        width: 60px;
+      }
     }
   }
 
@@ -82,5 +89,18 @@
 @include mq-tablet {
   .mobile-menu-wrapper {
     display: none;
+  }
+
+  .menu {
+    li {
+      text-align: center;
+      &.icon {
+        a {
+          &:hover, &:active, &:focus {
+            border-bottom: none;
+          }
+        }
+      }
+    }
   }
 }

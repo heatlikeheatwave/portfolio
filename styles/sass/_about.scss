@@ -2,14 +2,31 @@
   .about {
     padding: 25% 10%;
     h2 {
-      padding: 70px 0 15px 0;
       text-align: center;
+    }
+    img {
+      max-height: 400px;
+      object-fit: cover;
     }
     p {
       font-family: $sourceFontFamily;
       font-weight: $lightFontWeight;
-      line-height: 1.6;
+      line-height: 1.8;
       margin: 20px 0;
+      &:first-of-type {
+        margin-top: 35px;
+      }
+    }
+    a {
+      color: #0072b1;
+      font-family: $sourceFontFamily;
+      &:not(.fab) {
+        height: 35px;
+        padding-bottom: 5px;
+        &:hover, &:focus, &:active {
+          color: #0072b1;
+        }
+      }
     }
   }
 }
@@ -17,6 +34,9 @@
 @include mq-tablet {
   .about {
     padding: 10% 5%;
+    p {
+      width: 50%;
+    }
   }
 
 }

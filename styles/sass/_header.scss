@@ -28,7 +28,7 @@
     .menu {
       display: block;
       li {
-        display: inline-block;
+        display: inline;
         margin-left: 20px;
         &:first-of-type {
           margin-left: 0;
@@ -39,6 +39,11 @@
 }
 
 @include mq-desktop {
+  header {
+    h4, a {
+      font-size: 2.4rem;
+    }
+  }
 
 }
 

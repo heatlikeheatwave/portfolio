@@ -20,6 +20,7 @@
 
   h2 {
     font-size: 3rem;
+    padding-bottom: 35px;
   }
 
   h3 {
@@ -70,12 +71,6 @@
     }
   }
 
-  nav {
-    a:not(.fab) {
-      width: 95px;
-    }
-  }
-
   .fab {
     color: $white;
     text-decoration: none;
@@ -86,16 +81,6 @@
 
   .italic {
     font-style: italic;
-  }
-
-  .icon {
-    display: inline-block;
-    a {
-      width: 60px;
-      &:hover, &:active, &:focus {
-        border-bottom: none;
-      }
-    }
   }
 }
 
@@ -125,5 +110,8 @@
 }
 
 @include mq-retina {
-
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
