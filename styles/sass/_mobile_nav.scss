@@ -6,6 +6,7 @@
 
   .mobile-nav {
     align-items: center;
+    background: $black;
     border: none;
     box-shadow: none;
     cursor: pointer;
@@ -13,7 +14,7 @@
     justify-content: center;
     font-size: 2rem;
     height: 100%;
-    position: fixed;
+    position: absolute;
     overflow-y: hidden;
     transition: bottom 500ms ease-in-out;
     text-align: center;
@@ -21,7 +22,6 @@
     width: 100%;
     z-index: 1;
     &.expanded {
-      background: $black;
       transform: translate(-39%, 5%);
       a {
         animation: 1s fadeIn;
@@ -46,9 +46,14 @@
     background: none;
     border: none;
     box-shadow: none;
-    cursor: 'pointer';
-    user-select: none;
+    height: 35px;
+    width: 40px;
     z-index: 2;
+    &:focus {
+      border: 1px solid $white;
+      border-radius: 3px;
+      outline: none;
+    }
     .fa-bars {
       color: $white;
       background: $transparent;
