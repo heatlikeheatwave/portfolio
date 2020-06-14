@@ -9,6 +9,7 @@
   }
 
   body {
+    background: $black;
     overflow-x: hidden;
   }
 
@@ -24,7 +25,6 @@
 
   h2 {
     font-size: 3rem;
-    padding-bottom: 35px;
   }
 
   h3 {
@@ -42,6 +42,19 @@
 
   p, a {
     font-size: 2.2rem;
+  }
+
+  a:not(.fab) {
+    color: $white;
+    font-family: $poppinsFontFamily;
+    display: inline-block;
+    height: 50px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+      color: $basaltGrey;
+      border-bottom: 1px solid $basaltGrey;
+    }
   }
 
   img {
@@ -62,19 +75,6 @@
     font-size: 2.5rem;
   }
 
-  a:not(.fab) {
-    color: $white;
-    font-family: $poppinsFontFamily;
-    display: inline-block;
-    height: 50px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    &:hover, &:active, &:focus {
-      color: $basaltGrey;
-      border-bottom: 1px solid $basaltGrey;
-    }
-  }
-
   .fab {
     color: $white;
     text-decoration: none;
@@ -85,6 +85,16 @@
 
   .italic {
     font-style: italic;
+  }
+
+  .skills, .about {
+    background: $white;
+  }
+
+  .projects, .about {
+    h2 {
+      padding-bottom: 35px;
+    }
   }
 }
 
@@ -117,10 +127,10 @@
     font-size: 2.4rem;
   }
 
-  header, footer, .bio, .projects {
+  .skills, .about {
     position: relative;
     &::before, &::after {
-      background: $black;
+      background: $white;
       bottom: 0;
       content: "";
       position: absolute;
@@ -134,7 +144,4 @@
       left: 100%;
     }
   }
-}
-
-@include mq-retina {
 }
