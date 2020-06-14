@@ -5888,32 +5888,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.visuallyHidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0);
-  overflow: hidden;
 }
 
 * {
@@ -5923,6 +5900,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background: #000000;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -5937,7 +5919,6 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  padding-bottom: 35px;
 }
 
 h3 {
@@ -5955,6 +5936,24 @@ ul {
 
 p, a {
   font-size: 2.2rem;
+}
+
+a:not(
+.fab) {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  height: 50px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+a:not(
+.fab):hover, a:not(
+.fab):active, a:not(
+.fab):focus {
+  color: #999999;
+  border-bottom: 1px solid #999999;
 }
 
 img {
@@ -5976,24 +5975,6 @@ svg {
   font-size: 2.5rem;
 }
 
-a:not(
-.fab) {
-  color: #FFFFFF;
-  font-family: "Poppins", sans-serif;
-  display: inline-block;
-  height: 50px;
-  padding-bottom: 20px;
-  text-decoration: none;
-}
-
-a:not(
-.fab):hover, a:not(
-.fab):active, a:not(
-.fab):focus {
-  color: #999999;
-  border-bottom: 1px solid #999999;
-}
-
 
 .fab {
   color: #FFFFFF;
@@ -6006,6 +5987,14 @@ a:not(
 
 .italic {
   font-style: italic;
+}
+
+.skills, .about {
+  background: #FFFFFF;
+}
+
+.projects h2, .about h2 {
+  padding-bottom: 35px;
 }
 
 @media (min-width: 768px) {
@@ -6025,16 +6014,30 @@ a:not(
 }
 
 @media (min-width: 1080px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   
   .fab {
     font-size: 2.4rem;
   }
-}
-
-@media (min-width: 2000px) {
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  .skills, .about {
+    position: relative;
+  }
+  .skills::before, .skills::after, .about::before, .about::after {
+    background: #FFFFFF;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50vw;
+  }
+  .skills::before, .about::before {
+    right: 100%;
+  }
+  .skills::after, .about::after {
+    left: 100%;
   }
 }
 
@@ -6051,6 +6054,7 @@ a:not(
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #000000;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -6063,7 +6067,7 @@ a:not(
           justify-content: center;
   font-size: 2rem;
   height: 100%;
-  position: fixed;
+  position: absolute;
   overflow-y: hidden;
   -webkit-transition: bottom 500ms ease-in-out;
   transition: bottom 500ms ease-in-out;
@@ -6075,7 +6079,6 @@ a:not(
 }
 
 .mobile-nav.expanded {
-  background: #000000;
   -webkit-transform: translate(-39%, 5%);
           transform: translate(-39%, 5%);
 }
@@ -6109,12 +6112,15 @@ a:not(
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  cursor: 'pointer';
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  height: 35px;
+  width: 40px;
   z-index: 2;
+}
+
+.menu-button:focus {
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  outline: none;
 }
 
 .menu-button .fa-bars {
@@ -6335,7 +6341,6 @@ footer .social-media li:last-of-type {
 }
 
 .skills {
-  background: #FFFFFF;
   height: 100%;
   min-height: 350px;
   padding: 25% 0;
@@ -6345,26 +6350,18 @@ footer .social-media li:last-of-type {
   display: inline;
 }
 
-.skills details {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .skills summary {
+  font-size: 2.2rem;
   display: list-item;
-  padding-bottom: 25px;
+  margin: 0 auto 25px;
   text-align: center;
+  width: 150px;
 }
 
-.skills summary::marker {
-  font-size: 2.5rem;
+.skills summary:focus {
+  border: 2px solid #000000;
+  border-radius: 3px;
+  outline: none;
 }
 
 .skills .svg-container {
@@ -6387,7 +6384,7 @@ footer .social-media li:last-of-type {
     padding: 10% 5%;
   }
   .skills summary {
-    padding: 70px 0;
+    margin: 70px auto;
   }
   .skills summary::marker {
     font-size: 2.8rem;
@@ -6491,8 +6488,8 @@ footer .social-media li:last-of-type {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
   -webkit-transition: -webkit-transform ease 400ms;
   transition: -webkit-transform ease 400ms;
   transition: transform ease 400ms;
@@ -6535,6 +6532,12 @@ footer .social-media li:last-of-type {
   }
   .project-info {
     height: 110px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .image-wrapper {
+    height: 400px;
   }
 }
 
