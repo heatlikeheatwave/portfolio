@@ -6074,13 +6074,14 @@ svg {
   text-align: center;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  width: 100%;
+  width: 0;
   z-index: 1;
 }
 
 .mobile-nav.expanded {
   -webkit-transform: translate(-39%, 5%);
           transform: translate(-39%, 5%);
+  width: 100%;
 }
 
 .mobile-nav.expanded a {
