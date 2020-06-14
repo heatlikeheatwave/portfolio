@@ -12,6 +12,11 @@
       margin: 0 auto 25px;
       text-align: center;
       width: 150px;
+      &:focus {
+        border: 2px solid $black;
+        border-radius: 3px;
+        outline: none;
+      }
     }
     .svg-container {
       align-content: center;
