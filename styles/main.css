@@ -6259,11 +6259,6 @@ footer p {
 
 footer .footer-nav,
 footer .social-media {
-  margin: 20px 0 10px;
-}
-
-footer .footer-nav ul,
-footer .social-media ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6272,16 +6267,15 @@ footer .social-media ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 20px 0 10px;
 }
 
-footer .footer-nav li,
-footer .social-media li {
+footer li {
   padding: 10px 0;
   margin-right: 25px;
 }
 
-footer .footer-nav li:last-of-type,
-footer .social-media li:last-of-type {
+footer li:last-of-type {
   margin-right: 0;
 }
 
