@@ -5997,6 +5997,10 @@ svg {
   padding-bottom: 35px;
 }
 
+.link-container a, .footer-nav a {
+  border-bottom: 1px solid #999999;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 5rem;

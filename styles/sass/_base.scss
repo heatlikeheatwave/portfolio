@@ -96,6 +96,12 @@
       padding-bottom: 35px;
     }
   }
+
+  .link-container, .footer-nav {
+    a {
+      border-bottom: 1px solid $basaltGrey;
+    }
+  }
 }
 
 @include mq-tablet {
